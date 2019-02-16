@@ -1,4 +1,14 @@
 {
+  "page.$": {
+    "prefix": "p$",
+    "body": "await page.$('${1}');",
+    "description": "Puppeteer - runs `document.querySelector` within the page"
+  },
+  "page.$$": {
+    "prefix": "p$$",
+    "body": "await page.$$('${1}');",
+    "description": "Puppeteer - runs `document.querySelectorAll` within the page"
+  },
   "page.goBack": {
     "prefix": "pgb",
     "body": "await page.goBack();",
@@ -12,7 +22,7 @@
   "page.goto": {
     "prefix": "pg",
     "body": "await page.goto('${1}');",
-    "description": "Puppeteer - navigates to a URL"
+    "description": "Puppeteer - navigates the page to a URL"
   },
   "page.pdf": {
     "prefix": "pp",
