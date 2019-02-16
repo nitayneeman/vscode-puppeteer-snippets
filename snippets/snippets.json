@@ -24,6 +24,11 @@
     "body": "await page.goto('${1}');",
     "description": "Puppeteer - navigates the page to a URL"
   },
+  "page.hover": {
+    "prefix": "ph",
+    "body": "await page.hover('${1}');",
+    "description": "Puppeteer - hovers over the center of an element within the page"
+  },
   "page.pdf": {
     "prefix": "pp",
     "body": "await page.pdf({ path: '${1:page.pdf}', format: '${2|A4,Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A5,A6|}' });",
@@ -38,5 +43,15 @@
     "prefix": "ps",
     "body": "await page.screenshot({ path: '${1:page.png}', fullPage: '${2|true,false|}' });",
     "description": "Puppeteer - generates a screenshot of the page"
+  },
+  "page.title": {
+    "prefix": "pt",
+    "body": "await page.title();",
+    "description": "Puppeteer - returns the page's title"
+  },
+  "page.url": {
+    "prefix": "pu",
+    "body": "await page.url();",
+    "description": "Puppeteer - returns the page's URL"
   }
 }
