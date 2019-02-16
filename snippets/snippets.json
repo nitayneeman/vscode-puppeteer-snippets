@@ -9,6 +9,31 @@
     "body": "await page.$$('${1}');",
     "description": "Puppeteer - runs `document.querySelectorAll` within the page"
   },
+  "page.browser": {
+    "prefix": "pb",
+    "body": "page.browser();",
+    "description": "Puppeteer - returns the browser the page belongs to"
+  },
+  "page.click": {
+    "prefix": "pclk",
+    "body": "await page.click('${1}');",
+    "description": "Puppeteer - clicks in the center of an element within the page"
+  },
+  "page.close": {
+    "prefix": "pcls",
+    "body": "await page.close();",
+    "description": "Puppeteer - closes the page"
+  },
+  "page.content": {
+    "prefix": "pcnt",
+    "body": "await page.content();",
+    "description": "Puppeteer - returns the full HTML contents of the page"
+  },
+  "page.focus": {
+    "prefix": "pf",
+    "body": "await page.focus('${1}');",
+    "description": "Puppeteer - focuses an element within the page"
+  },
   "page.goBack": {
     "prefix": "pgb",
     "body": "await page.goBack();",
