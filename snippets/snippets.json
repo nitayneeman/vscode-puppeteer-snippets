@@ -53,5 +53,25 @@
     "prefix": "pu",
     "body": "await page.url();",
     "description": "Puppeteer - returns the page's URL"
+  },
+  "page.waitFor": {
+    "prefix": "pwf",
+    "body": "await page.waitFor('${1}');",
+    "description": "Puppeteer - waits until an element/predicate/timeout within the page is resolved"
+  },
+  "page.waitForFunction": {
+    "prefix": "pwff",
+    "body": "await page.waitForFunction('${1}');",
+    "description": "Puppeteer - waits until a predicate within the page returns a truthy value"
+  },
+  "page.waitForNavigation": {
+    "prefix": "pwfn",
+    "body": "await page.waitForNavigation();",
+    "description": "Puppeteer - waits until the page navigates to a new URL or reloads"
+  },
+  "page.waitForSelector": {
+    "prefix": "pwfs",
+    "body": "await page.waitForSelector('${1}');",
+    "description": "Puppeteer - waits until an element (by selector) is appeared in the page"
   }
 }
