@@ -1,1 +1,7 @@
-{}
+{
+  "page.goto": {
+    "prefix": "pg",
+    "body": "await page.goto('${1}');",
+    "description": "Puppeteer - navigate to a URL"
+  }
+}
