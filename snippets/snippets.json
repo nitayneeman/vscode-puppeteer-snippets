@@ -113,5 +113,29 @@
     "prefix": "pwfx",
     "body": "await page.waitForXPath('${1}');",
     "description": "Puppeteer - waits until an element (by XPath) is appeared in the page"
+  },
+  "page.on('close')": {
+    "prefix": "poclose",
+    "body": ["page.on('close', () => {", "\t${0:console.log('Closed');}", "});"],
+    "description": "Puppeteer - emitted when the page is closed"
+  },
+  "page.on('console')": {
+    "prefix": "poconsole",
+    "body": ["page.on('console', msg => {", "\t${0:console.log(msg.args());}", "});"],
+    "description": "Puppeteer - emitted when a script within the page calls one of console API methods"
+  },
+  "page.on('dialog')": {
+    "prefix": "podialog",
+    "body": ["page.on('dialog', dialog => {", "\t${0:console.log(dialog.message());}", "});"],
+    "description": "Puppeteer - emitted when a dialog appears in the page"
+  },
+  "page.on('domcontentloaded')": {
+    "prefix": "podcl",
+    "body": [
+      "page.on('domcontentloaded', () => {",
+      "\t${0:console.log('DOMContentLoaded is dispatched');}",
+      "});"
+    ],
+    "description": "Puppeteer - emitted when the `DOMContentLoaded` event of the page is dispatched"
   }
 }
