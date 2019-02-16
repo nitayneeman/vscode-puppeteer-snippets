@@ -56,12 +56,12 @@
   },
   "page.waitFor": {
     "prefix": "pwf",
-    "body": "await page.waitFor('${1}');",
+    "body": "await page.waitFor(${1});",
     "description": "Puppeteer - waits until an element/predicate/timeout within the page is resolved"
   },
   "page.waitForFunction": {
     "prefix": "pwff",
-    "body": "await page.waitForFunction('${1}');",
+    "body": "await page.waitForFunction(${1});",
     "description": "Puppeteer - waits until a predicate within the page returns a truthy value"
   },
   "page.waitForNavigation": {
@@ -69,9 +69,24 @@
     "body": "await page.waitForNavigation();",
     "description": "Puppeteer - waits until the page navigates to a new URL or reloads"
   },
+  "page.waitForRequest": {
+    "prefix": "pwfreq",
+    "body": "await page.waitForRequest(${1});",
+    "description": "Puppeteer - waits until a request by URL/predicate is resolved"
+  },
+  "page.waitForResponse": {
+    "prefix": "pwfres",
+    "body": "await page.waitForResponse(${1});",
+    "description": "Puppeteer - waits until a response by URL/predicate is resolved"
+  },
   "page.waitForSelector": {
     "prefix": "pwfs",
     "body": "await page.waitForSelector('${1}');",
     "description": "Puppeteer - waits until an element (by selector) is appeared in the page"
+  },
+  "page.waitForXPath": {
+    "prefix": "pwfx",
+    "body": "await page.waitForXPath('${1}');",
+    "description": "Puppeteer - waits until an element (by XPath) is appeared in the page"
   }
 }
