@@ -1,17 +1,32 @@
 {
+  "page.goBack": {
+    "prefix": "pgb",
+    "body": "await page.goBack();",
+    "description": "Puppeteer - navigates to the previous page in the history"
+  },
+  "page.goForward": {
+    "prefix": "pgf",
+    "body": "await page.goForward();",
+    "description": "Puppeteer - navigates to the next page in the history"
+  },
   "page.goto": {
     "prefix": "pg",
     "body": "await page.goto('${1}');",
     "description": "Puppeteer - navigates to a URL"
   },
-  "page.screenshot": {
-    "prefix": "ps",
-    "body": "await page.screenshot({ path: '${1:page.png}', fullPage: '${2|true,false|}' })",
-    "description": "Puppeteer - generates a screenshot of the page"
-  },
   "page.pdf": {
     "prefix": "pp",
-    "body": "await page.pdf({ path: '${1:page.pdf}', format: '${2|A4,Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A5,A6|}' })",
+    "body": "await page.pdf({ path: '${1:page.pdf}', format: '${2|A4,Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A5,A6|}' });",
     "description": "Puppeteer - generates a PDF from the page"
+  },
+  "page.reload": {
+    "prefix": "pr",
+    "body": "await page.reload();",
+    "description": "Puppeteer - reloads the page"
+  },
+  "page.screenshot": {
+    "prefix": "ps",
+    "body": "await page.screenshot({ path: '${1:page.png}', fullPage: '${2|true,false|}' });",
+    "description": "Puppeteer - generates a screenshot of the page"
   }
 }
