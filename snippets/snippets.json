@@ -192,5 +192,20 @@
     "prefix": "p-on-requestfinished",
     "body": ["page.on('requestfailed', request => {", "\t${0:console.log(request.url());}", "});"],
     "description": "Puppeteer - emitted when a request finishes successfully"
+  },
+  "page.on('response')": {
+    "prefix": "p-on-response",
+    "body": ["page.on('response', response => {", "\t${0:console.log(response.status());}", "});"],
+    "description": "Puppeteer - emitted when a response is received"
+  },
+  "page.on('workercreated')": {
+    "prefix": "p-on-workercreated",
+    "body": ["page.on('workercreated', worker => {", "\t${0:console.log(worker.url());}", "});"],
+    "description": "Puppeteer - emitted when a dedicated `WebWorker` is spawned by the page"
+  },
+  "page.on('workerdestroyed')": {
+    "prefix": "p-on-workerdestroyed",
+    "body": ["page.on('workerdestroyed', worker => {", "\t${0:console.log(worker.url());}", "});"],
+    "description": "Puppeteer - emitted when a dedicated `WebWorker` is terminated"
   }
 }
