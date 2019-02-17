@@ -130,12 +130,42 @@
     "description": "Puppeteer - emitted when a dialog appears in the page"
   },
   "page.on('domcontentloaded')": {
-    "prefix": "podcl",
+    "prefix": "podmcl",
     "body": [
       "page.on('domcontentloaded', () => {",
       "\t${0:console.log('DOMContentLoaded is dispatched');}",
       "});"
     ],
     "description": "Puppeteer - emitted when the `DOMContentLoaded` event of the page is dispatched"
+  },
+  "page.on('error')": {
+    "prefix": "poerror",
+    "body": ["page.on('error', error => {", "\t${0:console.log(error);}", "});"],
+    "description": "Puppeteer - emitted when the page crashes"
+  },
+  "page.on('frameattached')": {
+    "prefix": "pofa",
+    "body": ["page.on('frameattached', frame => {", "\t${0:console.log(frame.content();}", "});"],
+    "description": "Puppeteer - emitted when a frame within the page is attached"
+  },
+  "page.on('framedetached')": {
+    "prefix": "pofd",
+    "body": ["page.on('framedetached', frame => {", "\t${0:console.log(frame.content();}", "});"],
+    "description": "Puppeteer - emitted when a frame within the page is detached"
+  },
+  "page.on('framenavigated')": {
+    "prefix": "pofn",
+    "body": ["page.on('framenavigated', frame => {", "\t${0:console.log(frame.content();}", "});"],
+    "description": "Puppeteer - emitted when a frame within the page is navigated to a new url"
+  },
+  "page.on('load')": {
+    "prefix": "poload",
+    "body": ["page.on('load', () => {", "\t${0:console.log('Loaded');}", "});"],
+    "description": "Puppeteer - emitted when the `load` event of the page is dispatched"
+  },
+  "page.on('metrics')": {
+    "prefix": "pometrics",
+    "body": ["page.on('metrics', result => {", "\t${0:console.log(result.metrics);}", "});"],
+    "description": "Puppeteer - emitted when a script within the page invokes `console.timeStamp`"
   }
 }
