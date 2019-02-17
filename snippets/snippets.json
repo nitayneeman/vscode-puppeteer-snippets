@@ -115,22 +115,22 @@
     "description": "Puppeteer - waits until an element (by XPath) is appeared in the page"
   },
   "page.on('close')": {
-    "prefix": "poclose",
+    "prefix": "poncs",
     "body": ["page.on('close', () => {", "\t${0:console.log('Closed');}", "});"],
     "description": "Puppeteer - emitted when the page is closed"
   },
   "page.on('console')": {
-    "prefix": "poconsole",
+    "prefix": "poncl",
     "body": ["page.on('console', msg => {", "\t${0:console.log(msg.args());}", "});"],
     "description": "Puppeteer - emitted when a script within the page calls one of console API methods"
   },
   "page.on('dialog')": {
-    "prefix": "podialog",
+    "prefix": "pond",
     "body": ["page.on('dialog', dialog => {", "\t${0:console.log(dialog.message());}", "});"],
     "description": "Puppeteer - emitted when a dialog appears in the page"
   },
   "page.on('domcontentloaded')": {
-    "prefix": "podmcl",
+    "prefix": "pondcl",
     "body": [
       "page.on('domcontentloaded', () => {",
       "\t${0:console.log('DOMContentLoaded is dispatched');}",
@@ -139,33 +139,43 @@
     "description": "Puppeteer - emitted when the `DOMContentLoaded` event of the page is dispatched"
   },
   "page.on('error')": {
-    "prefix": "poerror",
+    "prefix": "pone",
     "body": ["page.on('error', error => {", "\t${0:console.log(error);}", "});"],
     "description": "Puppeteer - emitted when the page crashes"
   },
   "page.on('frameattached')": {
-    "prefix": "pofa",
+    "prefix": "ponfa",
     "body": ["page.on('frameattached', frame => {", "\t${0:console.log(frame.content();}", "});"],
     "description": "Puppeteer - emitted when a frame within the page is attached"
   },
   "page.on('framedetached')": {
-    "prefix": "pofd",
+    "prefix": "ponfd",
     "body": ["page.on('framedetached', frame => {", "\t${0:console.log(frame.content();}", "});"],
     "description": "Puppeteer - emitted when a frame within the page is detached"
   },
   "page.on('framenavigated')": {
-    "prefix": "pofn",
+    "prefix": "ponfn",
     "body": ["page.on('framenavigated', frame => {", "\t${0:console.log(frame.content();}", "});"],
     "description": "Puppeteer - emitted when a frame within the page is navigated to a new url"
   },
   "page.on('load')": {
-    "prefix": "poload",
+    "prefix": "ponl",
     "body": ["page.on('load', () => {", "\t${0:console.log('Loaded');}", "});"],
     "description": "Puppeteer - emitted when the `load` event of the page is dispatched"
   },
   "page.on('metrics')": {
-    "prefix": "pometrics",
+    "prefix": "ponm",
     "body": ["page.on('metrics', result => {", "\t${0:console.log(result.metrics);}", "});"],
     "description": "Puppeteer - emitted when a script within the page invokes `console.timeStamp`"
+  },
+  "page.on('pageerror')": {
+    "prefix": "ponpe",
+    "body": ["page.on('error', error => {", "\t${0:console.log(error);}", "});"],
+    "description": "Puppeteer - emitted when an uncaught exception happens within the page"
+  },
+  "page.on('popup')": {
+    "prefix": "ponp",
+    "body": ["page.on('popup', page => {", "\t${0:console.log(page.content();}", "});"],
+    "description": "Puppeteer - emitted when the page opens a new tab or window"
   }
 }
