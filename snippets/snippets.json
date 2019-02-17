@@ -54,6 +54,26 @@
     "body": "await page.hover('${1}');",
     "description": "Puppeteer - hovers over the center of an element within the page"
   },
+  "page.mouse.click": {
+    "prefix": "p-mouse-click",
+    "body": "await page.mouse.click(${1}, ${2});",
+    "description": "Puppeteer - clicks on area within the page by coordinates"
+  },
+  "page.mouse.down": {
+    "prefix": "p-mouse-down",
+    "body": "await page.mouse.down();",
+    "description": "Puppeteer - dispatches a `mousedown` event within the page"
+  },
+  "page.mouse.move": {
+    "prefix": "p-mouse-move",
+    "body": "await page.mouse.move();",
+    "description": "Puppeteer - dispatches a `mousemove` event within the page"
+  },
+  "page.mouse.up": {
+    "prefix": "p-mouse-up",
+    "body": "await page.mouse.up();",
+    "description": "Puppeteer - dispatches a `mouseup` event within the page"
+  },
   "page.pdf": {
     "prefix": "p-pdf",
     "body": "await page.pdf({ path: '${1:page.pdf}', format: '${2|A4,Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A5,A6|}' });",
