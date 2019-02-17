@@ -177,5 +177,20 @@
     "prefix": "ponp",
     "body": ["page.on('popup', page => {", "\t${0:console.log(page.content();}", "});"],
     "description": "Puppeteer - emitted when the page opens a new tab or window"
+  },
+  "page.on('request')": {
+    "prefix": "ponreq",
+    "body": ["page.on('request', request => {", "\t${0:console.log(request.url();}", "});"],
+    "description": "Puppeteer - emitted when the request is issued by the page"
+  },
+  "page.on('requestfailed')": {
+    "prefix": "ponreqfld",
+    "body": ["page.on('requestfailed', request => {", "\t${0:console.log(request.url();}", "});"],
+    "description": "Puppeteer - emitted when a request fails"
+  },
+  "page.on('requestfinished')": {
+    "prefix": "ponreqfns",
+    "body": ["page.on('requestfailed', request => {", "\t${0:console.log(request.url();}", "});"],
+    "description": "Puppeteer - emitted when a request finishes successfully"
   }
 }
