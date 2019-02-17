@@ -54,6 +54,31 @@
     "body": "await page.hover('${1}');",
     "description": "Puppeteer - hovers over the center of an element within the page"
   },
+  "page.keyboard.down": {
+    "prefix": "p-keyboard-down",
+    "body": "await page.keyboard.down('${1}');",
+    "description": "Puppeteer - dispatches a `keydown` event within the page"
+  },
+  "page.keyboard.press": {
+    "prefix": "p-keyboard-press",
+    "body": "await page.keyboard.press('${1}');",
+    "description": "Puppeteer - presses on a specific key within the page"
+  },
+  "page.keyboard.sendCharacter": {
+    "prefix": "p-keyboard-sendCharacter",
+    "body": "await page.keyboard.sendCharacter('${1}');",
+    "description": "Puppeteer - dispatches a `keypress` and `input` event within the page"
+  },
+  "page.keyboard.type": {
+    "prefix": "p-keyboard-type",
+    "body": "await page.keyboard.type('${1}');",
+    "description": "Puppeteer - types a text into a focused element within the page"
+  },
+  "page.keyboard.up": {
+    "prefix": "p-keyboard-up",
+    "body": "await page.keyboard.up('${1}');",
+    "description": "Puppeteer - dispatches a `keyup` event within the page"
+  },
   "page.mouse.click": {
     "prefix": "p-mouse-click",
     "body": "await page.mouse.click(${1}, ${2});",
