@@ -1,4 +1,24 @@
 {
+  "browser.close": {
+    "prefix": "p-browser-close",
+    "body": "await browser.close();",
+    "description": "Puppeteer - closes Chromium and all of its pages"
+  },
+  "browser.disconnect": {
+    "prefix": "p-browser-disconnect",
+    "body": "browser.disconnect();",
+    "description": "Puppeteer - disconnects Puppeteer from the browser, but leaves the Chromium process running"
+  },
+  "browser.newPage": {
+    "prefix": "p-browser-newPage",
+    "body": "await browser.newPage();",
+    "description": "Puppeteer - resolves to a new page with a default browser context"
+  },
+  "browser.on('disconnected')": {
+    "prefix": "p-browser-on-disconnected",
+    "body": ["browser.on('disconnected', () => {", "\t${0}", "});"],
+    "description": "Puppeteer - emitted when Puppeteer gets disconnected from the Chromium instance"
+  },
   "page.$": {
     "prefix": "p-page-$",
     "body": "await page.$('${1}');",
