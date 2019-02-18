@@ -1,206 +1,206 @@
 {
   "page.$": {
-    "prefix": "p-$",
+    "prefix": "p-page-$",
     "body": "await page.$('${1}');",
     "description": "Puppeteer - runs `document.querySelector` within the page"
   },
   "page.$$": {
-    "prefix": "p-$$",
+    "prefix": "p-page-$$",
     "body": "await page.$$('${1}');",
     "description": "Puppeteer - runs `document.querySelectorAll` within the page"
   },
   "page.$eval": {
-    "prefix": "p-$eval",
+    "prefix": "p-page-$eval",
     "body": ["await page.$eval('${1}', element => {", "\t${2:console.log(element);}", "});"],
     "description": "Puppeteer - runs `document.querySelector` within the page and passes the result as the first argument to a function"
   },
   "page.$$eval": {
-    "prefix": "p-$$eval",
+    "prefix": "p-page-$$eval",
     "body": ["await page.$$eval('${1}', elements => {", "\t${2:console.log(elements);}", "});"],
     "description": "Puppeteer - runs `document.querySelectorAll` within the page and passes the results as the first argument to a function"
   },
   "page.browser": {
-    "prefix": "p-browser",
+    "prefix": "p-page-browser",
     "body": "page.browser();",
     "description": "Puppeteer - returns the browser the page belongs to"
   },
   "page.click": {
-    "prefix": "p-click",
+    "prefix": "p-page-click",
     "body": "await page.click('${1}');",
     "description": "Puppeteer - clicks in the center of an element within the page"
   },
   "page.close": {
-    "prefix": "p-close",
+    "prefix": "p-page-close",
     "body": "await page.close();",
     "description": "Puppeteer - closes the page"
   },
   "page.content": {
-    "prefix": "p-content",
+    "prefix": "p-page-content",
     "body": "await page.content();",
     "description": "Puppeteer - returns the full HTML contents of the page"
   },
   "page.emulate": {
-    "prefix": "p-emulate",
+    "prefix": "p-page-emulate",
     "body": "await page.emulate(${1});",
     "description": "Puppeteer - emulates a given device metrics and user agent within the page"
   },
   "page.emulateMedia": {
-    "prefix": "p-emulateMedia",
+    "prefix": "p-page-emulateMedia",
     "body": "await page.emulateMedia(${1|'screen','print',null|});",
     "description": "Puppeteer - changes the CSS media type of the page"
   },
   "page.evaluate": {
-    "prefix": "p-evaluate",
+    "prefix": "p-page-evaluate",
     "body": ["await page.evaluate(() => {", "\t${0}", "});"],
     "description": "Puppeteer - evaluates a function in the page context"
   },
   "page.focus": {
-    "prefix": "p-focus",
+    "prefix": "p-page-focus",
     "body": "await page.focus('${1}');",
     "description": "Puppeteer - focuses an element within the page"
   },
   "page.goBack": {
-    "prefix": "p-goBack",
+    "prefix": "p-page-goBack",
     "body": "await page.goBack();",
     "description": "Puppeteer - navigates to the previous page in the history"
   },
   "page.goForward": {
-    "prefix": "p-goForward",
+    "prefix": "p-page-goForward",
     "body": "await page.goForward();",
     "description": "Puppeteer - navigates to the next page in the history"
   },
   "page.goto": {
-    "prefix": "p-goto",
+    "prefix": "p-page-goto",
     "body": "await page.goto('${1}');",
     "description": "Puppeteer - navigates the page to a URL"
   },
   "page.hover": {
-    "prefix": "p-hover",
+    "prefix": "p-page-hover",
     "body": "await page.hover('${1}');",
     "description": "Puppeteer - hovers over the center of an element within the page"
   },
   "page.keyboard.down": {
-    "prefix": "p-keyboard-down",
+    "prefix": "p-page-keyboard-down",
     "body": "await page.keyboard.down('${1}');",
     "description": "Puppeteer - dispatches a `keydown` event within the page"
   },
   "page.keyboard.press": {
-    "prefix": "p-keyboard-press",
+    "prefix": "p-page-keyboard-press",
     "body": "await page.keyboard.press('${1}');",
     "description": "Puppeteer - presses on a specific key within the page"
   },
   "page.keyboard.sendCharacter": {
-    "prefix": "p-keyboard-sendCharacter",
+    "prefix": "p-page-keyboard-sendCharacter",
     "body": "await page.keyboard.sendCharacter('${1}');",
     "description": "Puppeteer - dispatches a `keypress` and `input` event within the page"
   },
   "page.keyboard.type": {
-    "prefix": "p-keyboard-type",
+    "prefix": "p-page-keyboard-type",
     "body": "await page.keyboard.type('${1}');",
     "description": "Puppeteer - types a text into a focused element within the page"
   },
   "page.keyboard.up": {
-    "prefix": "p-keyboard-up",
+    "prefix": "p-page-keyboard-up",
     "body": "await page.keyboard.up('${1}');",
     "description": "Puppeteer - dispatches a `keyup` event within the page"
   },
   "page.mouse.click": {
-    "prefix": "p-mouse-click",
+    "prefix": "p-page-mouse-click",
     "body": "await page.mouse.click(${1}, ${2});",
     "description": "Puppeteer - clicks on area within the page by coordinates"
   },
   "page.mouse.down": {
-    "prefix": "p-mouse-down",
+    "prefix": "p-page-mouse-down",
     "body": "await page.mouse.down();",
     "description": "Puppeteer - dispatches a `mousedown` event within the page"
   },
   "page.mouse.move": {
-    "prefix": "p-mouse-move",
+    "prefix": "p-page-mouse-move",
     "body": "await page.mouse.move();",
     "description": "Puppeteer - dispatches a `mousemove` event within the page"
   },
   "page.mouse.up": {
-    "prefix": "p-mouse-up",
+    "prefix": "p-page-mouse-up",
     "body": "await page.mouse.up();",
     "description": "Puppeteer - dispatches a `mouseup` event within the page"
   },
   "page.pdf": {
-    "prefix": "p-pdf",
+    "prefix": "p-page-pdf",
     "body": "await page.pdf({ path: '${1:page.pdf}', format: '${2|A4,Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A5,A6|}' });",
     "description": "Puppeteer - generates a PDF from the page"
   },
   "page.reload": {
-    "prefix": "p-reload",
+    "prefix": "p-page-reload",
     "body": "await page.reload();",
     "description": "Puppeteer - reloads the page"
   },
   "page.screenshot": {
-    "prefix": "p-screenshot",
+    "prefix": "p-page-screenshot",
     "body": "await page.screenshot({ path: '${1:page.png}', fullPage: '${2|true,false|}' });",
     "description": "Puppeteer - generates a screenshot of the page"
   },
   "page.title": {
-    "prefix": "p-title",
+    "prefix": "p-page-title",
     "body": "await page.title();",
     "description": "Puppeteer - returns the page's title"
   },
   "page.url": {
-    "prefix": "p-url",
+    "prefix": "p-page-url",
     "body": "await page.url();",
     "description": "Puppeteer - returns the page's URL"
   },
   "page.waitFor": {
-    "prefix": "p-waitFor",
+    "prefix": "p-page-waitFor",
     "body": "await page.waitFor(${1});",
     "description": "Puppeteer - waits until an element/predicate/timeout within the page is resolved"
   },
   "page.waitForFunction": {
-    "prefix": "p-waitForFunction",
+    "prefix": "p-page-waitForFunction",
     "body": "await page.waitForFunction(${1});",
     "description": "Puppeteer - waits until a predicate within the page returns a truthy value"
   },
   "page.waitForNavigation": {
-    "prefix": "p-waitForNavigation",
+    "prefix": "p-page-waitForNavigation",
     "body": "await page.waitForNavigation();",
     "description": "Puppeteer - waits until the page navigates to a new URL or reloads"
   },
   "page.waitForRequest": {
-    "prefix": "p-waitForRequest",
+    "prefix": "p-page-waitForRequest",
     "body": "await page.waitForRequest(${1});",
     "description": "Puppeteer - waits until a request by URL/predicate is resolved"
   },
   "page.waitForResponse": {
-    "prefix": "p-waitForResponse",
+    "prefix": "p-page-waitForResponse",
     "body": "await page.waitForResponse(${1});",
     "description": "Puppeteer - waits until a response by URL/predicate is resolved"
   },
   "page.waitForSelector": {
-    "prefix": "p-waitForSelector",
+    "prefix": "p-page-waitForSelector",
     "body": "await page.waitForSelector('${1}');",
     "description": "Puppeteer - waits until an element (by selector) is appeared in the page"
   },
   "page.waitForXPath": {
-    "prefix": "p-waitForXPath",
+    "prefix": "p-page-waitForXPath",
     "body": "await page.waitForXPath('${1}');",
     "description": "Puppeteer - waits until an element (by XPath) is appeared in the page"
   },
   "page.on('close')": {
-    "prefix": "p-on-close",
+    "prefix": "p-page-on-close",
     "body": ["page.on('close', () => {", "\t${0:console.log('Closed');}", "});"],
     "description": "Puppeteer - emitted when the page is closed"
   },
   "page.on('console')": {
-    "prefix": "p-on-console",
+    "prefix": "p-page-on-console",
     "body": ["page.on('console', msg => {", "\t${0:console.log(msg.args());}", "});"],
     "description": "Puppeteer - emitted when a script within the page calls one of console API methods"
   },
   "page.on('dialog')": {
-    "prefix": "p-on-dialog",
+    "prefix": "p-page-on-dialog",
     "body": ["page.on('dialog', dialog => {", "\t${0:console.log(dialog.message());}", "});"],
     "description": "Puppeteer - emitted when a dialog appears in the page"
   },
   "page.on('domcontentloaded')": {
-    "prefix": "p-on-domcontentloaded",
+    "prefix": "p-page-on-domcontentloaded",
     "body": [
       "page.on('domcontentloaded', () => {",
       "\t${0:console.log('DOMContentLoaded is dispatched');}",
@@ -209,72 +209,72 @@
     "description": "Puppeteer - emitted when the `DOMContentLoaded` event of the page is dispatched"
   },
   "page.on('error')": {
-    "prefix": "p-on-error",
+    "prefix": "p-page-on-error",
     "body": ["page.on('error', error => {", "\t${0:console.log(error);}", "});"],
     "description": "Puppeteer - emitted when the page crashes"
   },
   "page.on('frameattached')": {
-    "prefix": "p-on-frameattached",
+    "prefix": "p-page-on-frameattached",
     "body": ["page.on('frameattached', frame => {", "\t${0:console.log(frame.content());}", "});"],
     "description": "Puppeteer - emitted when a frame within the page is attached"
   },
   "page.on('framedetached')": {
-    "prefix": "p-on-framedetached",
+    "prefix": "p-page-on-framedetached",
     "body": ["page.on('framedetached', frame => {", "\t${0:console.log(frame.content());}", "});"],
     "description": "Puppeteer - emitted when a frame within the page is detached"
   },
   "page.on('framenavigated')": {
-    "prefix": "p-on-framenavigated",
+    "prefix": "p-page-on-framenavigated",
     "body": ["page.on('framenavigated', frame => {", "\t${0:console.log(frame.content());}", "});"],
     "description": "Puppeteer - emitted when a frame within the page is navigated to a new url"
   },
   "page.on('load')": {
-    "prefix": "p-on-load",
+    "prefix": "p-page-on-load",
     "body": ["page.on('load', () => {", "\t${0:console.log('Loaded');}", "});"],
     "description": "Puppeteer - emitted when the `load` event of the page is dispatched"
   },
   "page.on('metrics')": {
-    "prefix": "p-on-metrics",
+    "prefix": "p-page-on-metrics",
     "body": ["page.on('metrics', result => {", "\t${0:console.log(result.metrics);}", "});"],
     "description": "Puppeteer - emitted when a script within the page invokes `console.timeStamp`"
   },
   "page.on('pageerror')": {
-    "prefix": "p-on-pageerror",
+    "prefix": "p-page-on-pageerror",
     "body": ["page.on('error', error => {", "\t${0:console.log(error);}", "});"],
     "description": "Puppeteer - emitted when an uncaught exception happens within the page"
   },
   "page.on('popup')": {
-    "prefix": "p-on-popup",
+    "prefix": "p-page-on-popup",
     "body": ["page.on('popup', page => {", "\t${0:console.log(page.content());}", "});"],
     "description": "Puppeteer - emitted when the page opens a new tab or window"
   },
   "page.on('request')": {
-    "prefix": "p-on-request",
+    "prefix": "p-page-on-request",
     "body": ["page.on('request', request => {", "\t${0:console.log(request.url());}", "});"],
     "description": "Puppeteer - emitted when the request is issued by the page"
   },
   "page.on('requestfailed')": {
-    "prefix": "p-on-requestfailed",
+    "prefix": "p-page-on-requestfailed",
     "body": ["page.on('requestfailed', request => {", "\t${0:console.log(request.url());}", "});"],
     "description": "Puppeteer - emitted when a request fails"
   },
   "page.on('requestfinished')": {
-    "prefix": "p-on-requestfinished",
+    "prefix": "p-page-on-requestfinished",
     "body": ["page.on('requestfailed', request => {", "\t${0:console.log(request.url());}", "});"],
     "description": "Puppeteer - emitted when a request finishes successfully"
   },
   "page.on('response')": {
-    "prefix": "p-on-response",
+    "prefix": "p-page-on-response",
     "body": ["page.on('response', response => {", "\t${0:console.log(response.status());}", "});"],
     "description": "Puppeteer - emitted when a response is received"
   },
   "page.on('workercreated')": {
-    "prefix": "p-on-workercreated",
+    "prefix": "p-page-on-workercreated",
     "body": ["page.on('workercreated', worker => {", "\t${0:console.log(worker.url());}", "});"],
     "description": "Puppeteer - emitted when a dedicated `WebWorker` is spawned by the page"
   },
   "page.on('workerdestroyed')": {
-    "prefix": "p-on-workerdestroyed",
+    "prefix": "p-page-on-workerdestroyed",
     "body": ["page.on('workerdestroyed', worker => {", "\t${0:console.log(worker.url());}", "});"],
     "description": "Puppeteer - emitted when a dedicated `WebWorker` is terminated"
   }
