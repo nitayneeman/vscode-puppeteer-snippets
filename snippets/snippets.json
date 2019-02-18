@@ -1,4 +1,14 @@
 {
+  "puppeteer.connect": {
+    "prefix": "p-connect",
+    "body": ["await puppeteer.connect({", "\tbrowserURL: '${0}'", "});"],
+    "description": "Puppeteer - attaches Puppeteer to an existing Chromium instance"
+  },
+  "puppeteer.launch": {
+    "prefix": "p-launch",
+    "body": "await puppeteer.launch();",
+    "description": "Puppeteer - creates a Chromium instance and attaches Puppeteer to it"
+  },
   "browser.close": {
     "prefix": "p-browser-close",
     "body": "await browser.close();",
