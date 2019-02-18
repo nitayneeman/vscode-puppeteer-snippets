@@ -39,6 +39,21 @@
     "body": "await page.content();",
     "description": "Puppeteer - returns the full HTML contents of the page"
   },
+  "page.emulate": {
+    "prefix": "p-emulate",
+    "body": "await page.emulate(${1});",
+    "description": "Puppeteer - emulates a given device metrics and user agent within the page"
+  },
+  "page.emulateMedia": {
+    "prefix": "p-emulateMedia",
+    "body": "await page.emulateMedia(${1|'screen','print',null|});",
+    "description": "Puppeteer - changes the CSS media type of the page"
+  },
+  "page.evaluate": {
+    "prefix": "p-evaluate",
+    "body": ["await page.evaluate(() => {", "\t${0}", "});"],
+    "description": "Puppeteer - evaluates a function in the page context"
+  },
   "page.focus": {
     "prefix": "p-focus",
     "body": "await page.focus('${1}');",
