@@ -9,6 +9,16 @@
     "body": "await page.$$('${1}');",
     "description": "Puppeteer - runs `document.querySelectorAll` within the page"
   },
+  "page.$eval": {
+    "prefix": "p-$eval",
+    "body": ["await page.$eval('${1}', element => {", "\t${2:console.log(element);}", "});"],
+    "description": "Puppeteer - runs `document.querySelector` within the page and passes the result as the first argument to a function"
+  },
+  "page.$$eval": {
+    "prefix": "p-$$eval",
+    "body": ["await page.$$eval('${1}', elements => {", "\t${2:console.log(elements);}", "});"],
+    "description": "Puppeteer - runs `document.querySelectorAll` within the page and passes the results as the first argument to a function"
+  },
   "page.browser": {
     "prefix": "p-browser",
     "body": "page.browser();",
