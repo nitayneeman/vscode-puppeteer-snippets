@@ -6,6 +6,11 @@
   "engines": {
     "vscode": "^1.31.0"
   },
+  "icon": "images/puppeteer-logo.png",
+  "galleryBanner": {
+    "color": "#40b5a4",
+    "theme": "light"
+  },
   "categories": [
     "Snippets"
   ],
