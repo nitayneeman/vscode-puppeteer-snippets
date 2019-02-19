@@ -22,7 +22,7 @@
   "browser.newPage": {
     "prefix": "p-browser-newPage",
     "body": "await browser.newPage();",
-    "description": "Puppeteer - resolves to a new page with a default browser context"
+    "description": "Puppeteer - resolves a new page with the default browser context"
   },
   "browser.on('disconnected')": {
     "prefix": "p-browser-on-disconnected",
@@ -270,7 +270,7 @@
   },
   "page.on('pageerror')": {
     "prefix": "p-page-on-pageerror",
-    "body": ["page.on('error', error => {", "\t${0:console.log(error);}", "});"],
+    "body": ["page.on('pageerror', error => {", "\t${0:console.log(error);}", "});"],
     "description": "Puppeteer - emitted when an uncaught exception happens within the page"
   },
   "page.on('popup')": {
