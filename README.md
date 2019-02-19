@@ -21,7 +21,7 @@
 | Snippet                         | Content                          |
 | ------------------------------- | -------------------------------- |
 | `p-page-$`                      | page.\$                          |
-| `p-page-$$`                     | page.\\$\$                       |
+| `p-page-$$`                     | page.\$\$                        |
 | `p-page-$eval`                  | page.\$eval                      |
 | `p-page-$$eval`                 | page.\$\$eval                    |
 | `p-page-browser`                | page.browser                     |
