@@ -16,7 +16,7 @@
   },
   "browser.close": {
     "prefix": "p-browser-close",
-    "body": "${1:await } browser.close();",
+    "body": "${1:await }browser.close();",
     "description": "Puppeteer - closes Chromium and all of its pages"
   },
   "browser.disconnect": {
@@ -26,7 +26,7 @@
   },
   "browser.newPage": {
     "prefix": "p-browser-newPage",
-    "body": "${1:await } browser.newPage();",
+    "body": "${1:const page = await }browser.newPage();",
     "description": "Puppeteer - resolves a new page with the default browser context"
   },
   "browser.on('disconnected')": {
@@ -36,22 +36,22 @@
   },
   "page.$": {
     "prefix": "p-page-$",
-    "body": "${1:await } page.$('$0');",
+    "body": "${1:await }page.$('$0');",
     "description": "Puppeteer - runs `document.querySelector` within the page"
   },
   "page.$$": {
     "prefix": "p-page-$$",
-    "body": "${1:await } page.$$('$0');",
+    "body": "${1:await }page.$$('$0');",
     "description": "Puppeteer - runs `document.querySelectorAll` within the page"
   },
   "page.$eval": {
     "prefix": "p-page-$eval",
-    "body": ["${1:await } page.$eval('$2', element => {", "\t${3:console.log(element);}", "});"],
+    "body": ["${1:await }page.$eval('$2', element => {", "\t${3:console.log(element);}", "});"],
     "description": "Puppeteer - runs `document.querySelector` within the page and passes the result as the first argument to a function"
   },
   "page.$$eval": {
     "prefix": "p-page-$$eval",
-    "body": ["${1:await } page.$$eval('$2', elements => {", "\t${3:console.log(elements);}", "});"],
+    "body": ["${1:await }page.$$eval('$2', elements => {", "\t${3:console.log(elements);}", "});"],
     "description": "Puppeteer - runs `document.querySelectorAll` within the page and passes the results as the first argument to a function"
   },
   "page.browser": {
@@ -61,162 +61,162 @@
   },
   "page.click": {
     "prefix": "p-page-click",
-    "body": "${1:await } page.click('$0');",
+    "body": "${1:await }page.click('$0');",
     "description": "Puppeteer - clicks in the center of an element within the page"
   },
   "page.close": {
     "prefix": "p-page-close",
-    "body": "${1:await } page.close();",
+    "body": "${1:await }page.close();",
     "description": "Puppeteer - closes the page"
   },
   "page.content": {
     "prefix": "p-page-content",
-    "body": "${1:await } page.content();",
+    "body": "${1:await }page.content();",
     "description": "Puppeteer - returns the full HTML contents of the page"
   },
   "page.emulate": {
     "prefix": "p-page-emulate",
-    "body": "${1:await } page.emulate($0);",
+    "body": "${1:await }page.emulate($0);",
     "description": "Puppeteer - emulates a given device metrics and user agent within the page"
   },
   "page.emulateMedia": {
     "prefix": "p-page-emulateMedia",
-    "body": "${1:await } page.emulateMedia(${2|'screen','print',null|});",
+    "body": "${1:await }page.emulateMedia(${2|'screen','print',null|});",
     "description": "Puppeteer - changes the CSS media type of the page"
   },
   "page.evaluate": {
     "prefix": "p-page-evaluate",
-    "body": ["${1:await } page.evaluate(() => {", "\t$0", "});"],
+    "body": ["${1:await }page.evaluate(() => {", "\t$0", "});"],
     "description": "Puppeteer - evaluates a function in the page context"
   },
   "page.focus": {
     "prefix": "p-page-focus",
-    "body": "${1:await } page.focus('$0');",
+    "body": "${1:await }page.focus('$0');",
     "description": "Puppeteer - focuses an element within the page"
   },
   "page.goBack": {
     "prefix": "p-page-goBack",
-    "body": "${1:await } page.goBack();",
+    "body": "${1:await }page.goBack();",
     "description": "Puppeteer - navigates to the previous page in the history"
   },
   "page.goForward": {
     "prefix": "p-page-goForward",
-    "body": "${1:await } page.goForward();",
+    "body": "${1:await }page.goForward();",
     "description": "Puppeteer - navigates to the next page in the history"
   },
   "page.goto": {
     "prefix": "p-page-goto",
-    "body": "${1:await } page.goto('$0');",
+    "body": "${1:await }page.goto('$0');",
     "description": "Puppeteer - navigates the page to a URL"
   },
   "page.hover": {
     "prefix": "p-page-hover",
-    "body": "${1:await } page.hover('$0');",
+    "body": "${1:await }page.hover('$0');",
     "description": "Puppeteer - hovers over the center of an element within the page"
   },
   "page.keyboard.down": {
     "prefix": "p-page-keyboard-down",
-    "body": "${1:await } page.keyboard.down('$0');",
+    "body": "${1:await }page.keyboard.down('$0');",
     "description": "Puppeteer - dispatches a `keydown` event within the page"
   },
   "page.keyboard.press": {
     "prefix": "p-page-keyboard-press",
-    "body": "${1:await } page.keyboard.press('$0');",
+    "body": "${1:await }page.keyboard.press('$0');",
     "description": "Puppeteer - presses on a specific key within the page"
   },
   "page.keyboard.sendCharacter": {
     "prefix": "p-page-keyboard-sendCharacter",
-    "body": "${1:await } page.keyboard.sendCharacter('$0');",
+    "body": "${1:await }page.keyboard.sendCharacter('$0');",
     "description": "Puppeteer - dispatches a `keypress` and `input` event within the page"
   },
   "page.keyboard.type": {
     "prefix": "p-page-keyboard-type",
-    "body": "${1:await } page.keyboard.type('$0');",
+    "body": "${1:await }page.keyboard.type('$0');",
     "description": "Puppeteer - types a text into a focused element within the page"
   },
   "page.keyboard.up": {
     "prefix": "p-page-keyboard-up",
-    "body": "${1:await } page.keyboard.up('$0');",
+    "body": "${1:await }page.keyboard.up('$0');",
     "description": "Puppeteer - dispatches a `keyup` event within the page"
   },
   "page.mouse.click": {
     "prefix": "p-page-mouse-click",
-    "body": "${1:await } page.mouse.click(${2:0}, ${3:100});",
+    "body": "${1:await }page.mouse.click(${2:0}, ${3:100});",
     "description": "Puppeteer - clicks on area within the page by coordinates"
   },
   "page.mouse.down": {
     "prefix": "p-page-mouse-down",
-    "body": "${1:await } page.mouse.down();",
+    "body": "${1:await }page.mouse.down();",
     "description": "Puppeteer - dispatches a `mousedown` event within the page"
   },
   "page.mouse.move": {
     "prefix": "p-page-mouse-move",
-    "body": "${1:await } page.mouse.move();",
+    "body": "${1:await }page.mouse.move();",
     "description": "Puppeteer - dispatches a `mousemove` event within the page"
   },
   "page.mouse.up": {
     "prefix": "p-page-mouse-up",
-    "body": "${1:await } page.mouse.up();",
+    "body": "${1:await }page.mouse.up();",
     "description": "Puppeteer - dispatches a `mouseup` event within the page"
   },
   "page.pdf": {
     "prefix": "p-page-pdf",
-    "body": "${1:await } page.pdf({ path: '${2:page.pdf}', format: '${3|A4,Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A5,A6|}' });",
+    "body": "${1:await }page.pdf({ path: '${2:page.pdf}', format: '${3|A4,Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A5,A6|}' });",
     "description": "Puppeteer - generates a PDF from the page"
   },
   "page.reload": {
     "prefix": "p-page-reload",
-    "body": "${1:await } page.reload();",
+    "body": "${1:await }page.reload();",
     "description": "Puppeteer - reloads the page"
   },
   "page.screenshot": {
     "prefix": "p-page-screenshot",
-    "body": "${1:await } page.screenshot({ path: '${2:page.png}', fullPage: '${3|true,false|}' });",
+    "body": "${1:await }page.screenshot({ path: '${2:page.png}', fullPage: '${3|true,false|}' });",
     "description": "Puppeteer - generates a screenshot of the page"
   },
   "page.title": {
     "prefix": "p-page-title",
-    "body": "${1:await } page.title();",
+    "body": "${1:await }page.title();",
     "description": "Puppeteer - returns the page's title"
   },
   "page.url": {
     "prefix": "p-page-url",
-    "body": "${1:await } page.url();",
+    "body": "${1:await }page.url();",
     "description": "Puppeteer - returns the page's URL"
   },
   "page.waitFor": {
     "prefix": "p-page-waitFor",
-    "body": "${1:await } page.waitFor($0);",
+    "body": "${1:await }page.waitFor($0);",
     "description": "Puppeteer - waits until an element/predicate/timeout within the page is resolved"
   },
   "page.waitForFunction": {
     "prefix": "p-page-waitForFunction",
-    "body": "${1:await } page.waitForFunction($0);",
+    "body": "${1:await }page.waitForFunction($0);",
     "description": "Puppeteer - waits until a predicate within the page returns a truthy value"
   },
   "page.waitForNavigation": {
     "prefix": "p-page-waitForNavigation",
-    "body": "${1:await } page.waitForNavigation();",
+    "body": "${1:await }page.waitForNavigation();",
     "description": "Puppeteer - waits until the page navigates to a new URL or reloads"
   },
   "page.waitForRequest": {
     "prefix": "p-page-waitForRequest",
-    "body": "${1:await } page.waitForRequest($0);",
+    "body": "${1:await }page.waitForRequest($0);",
     "description": "Puppeteer - waits until a request by URL/predicate is resolved"
   },
   "page.waitForResponse": {
     "prefix": "p-page-waitForResponse",
-    "body": "${1:await } page.waitForResponse($0);",
+    "body": "${1:await }page.waitForResponse($0);",
     "description": "Puppeteer - waits until a response by URL/predicate is resolved"
   },
   "page.waitForSelector": {
     "prefix": "p-page-waitForSelector",
-    "body": "${1:await } page.waitForSelector('$0');",
+    "body": "${1:await }page.waitForSelector('$0');",
     "description": "Puppeteer - waits until an element (by selector) is appeared in the page"
   },
   "page.waitForXPath": {
     "prefix": "p-page-waitForXPath",
-    "body": "${1:await } page.waitForXPath('$0');",
+    "body": "${1:await }page.waitForXPath('$0');",
     "description": "Puppeteer - waits until an element (by XPath) is appeared in the page"
   },
   "page.on('close')": {
@@ -312,5 +312,19 @@
     "prefix": "p-page-on-workerdestroyed",
     "body": ["page.on('workerdestroyed', worker => {", "\t${0:console.log(worker.url());}", "});"],
     "description": "Puppeteer - emitted when a dedicated `WebWorker` is terminated"
+  },
+  "templates - basic": {
+    "prefix": "p-template-basic",
+    "body": [
+      "const puppeteer = require('puppeteer');",
+      "",
+      "const browser = await puppeteer.launch();",
+      "const page = await browser.newPage();",
+      "",
+      "$0",
+      "",
+      "await browser.close();"
+    ],
+    "description": "Puppeteer - creates a basic skeleton template"
   }
 }
