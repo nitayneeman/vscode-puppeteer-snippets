@@ -75,3 +75,9 @@
 | `p-page-on-response`            | page.on('response',...)         |
 | `p-page-on-workercreated`       | page.on('workercreated',...)    |
 | `p-page-on-workerdestroyed`     | page.on('workerdestroyed',...)  |
+
+### General Templates
+
+| Snippet            | Content                           |
+| ------------------ | --------------------------------- |
+| `p-template-basic` | Creates a basic skeleton template |
