@@ -1,4 +1,9 @@
 {
+  "puppeteer": {
+    "prefix": "p-import",
+    "body": "const ${1:puppeteer} = require('puppeteer');",
+    "description": "Puppeteer - imports Puppeteer"
+  },
   "puppeteer.connect": {
     "prefix": "p-connect",
     "body": ["${1:await }puppeteer.connect({", "\tbrowserURL: '$0'", "});"],

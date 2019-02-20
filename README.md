@@ -2,10 +2,11 @@
 
 ### Puppeteer
 
-| Snippet     | Content           |
-| ----------- | ----------------- |
-| `p-connect` | puppeteer.connect |
-| `p-launch`  | puppeteer.launch  |
+| Snippet     | Content              |
+| ----------- | -------------------- |
+| `p-import`  | require('puppeteer') |
+| `p-connect` | puppeteer.connect    |
+| `p-launch`  | puppeteer.launch     |
 
 ### Browser
 
