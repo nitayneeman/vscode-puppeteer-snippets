@@ -11,7 +11,7 @@
   },
   "puppeteer.launch": {
     "prefix": "p-launch",
-    "body": "${1:await } puppeteer.launch();",
+    "body": "${1:const browser = }${2:await }puppeteer.launch();",
     "description": "Puppeteer - creates a Chromium instance and attaches Puppeteer to it"
   },
   "browser.close": {
