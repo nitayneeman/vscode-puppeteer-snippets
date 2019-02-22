@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "author": "Nitay Neeman",
-  "description": "A Visual Studio Code extension which adds predefined useful code snippets for Puppeteer",
+  "description": "📋 A Visual Studio Code extension which adds predefined useful code snippets for Puppeteer",
   "homepage": "https://github.com/nitayneeman/vscode-puppeteer-snippets",
   "keywords": [
     "Puppeteer"
