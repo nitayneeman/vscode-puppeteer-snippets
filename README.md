@@ -19,6 +19,8 @@ This Visual Studio Code extension adds predefined useful code snippets for [Pupp
 
 Check out the [API](https://pptr.dev/#?product=Puppeteer&show=outline) for getting more information about the available capabilities.
 
+<br>
+
 ## 👨🏻‍🏫 How to Use
 
 At first, <a href="vscode:extension/nitayneeman.puppeteer-snippets">install</a> the [extension](https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets).
@@ -30,6 +32,8 @@ Start typing the prefix or just part of the snippet. Then, locate the snippets o
 
 ### 2. Command Palette
 Open the Command Palette and type `Insert Snippet`. Then, simply choose the dedicated snippet.
+
+<br>
 
 ## 📄 Snippets List
 
