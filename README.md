@@ -21,7 +21,7 @@ Check out the [API](https://pptr.dev/#?product=Puppeteer&show=outline) for getti
 
 ## 👨🏻‍🏫 How to Use
 
-At first, [install](vscode:extension/nitayneeman.puppeteer-snippets) the [extension](https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets).
+At first, <a href="vscode:extension/nitayneeman.puppeteer-snippets">install</a> the [extension](https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets).
 
 Basically, there are two ways to apply the snippets:
 
