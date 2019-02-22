@@ -21,7 +21,9 @@ Check out the [API](https://pptr.dev/#?product=Puppeteer&show=outline) for getti
 
 ## 👨🏻‍🏫 How to Use
 
-There are two ways to apply the snippets:
+At first, [install](vscode:extension/nitayneeman.puppeteer-snippets) the [extension](https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets).
+
+Basically, there are two ways to apply the snippets:
 
 ### 1. Direct Typing
 Start typing the prefix or just part of the snippet. Then, locate the snippets on the suggestions list and click on `TAB` or `ENTER`.
@@ -30,6 +32,8 @@ Start typing the prefix or just part of the snippet. Then, locate the snippets o
 Open the Command Palette and type `Insert Snippet`. Then, simply choose the dedicated snippet.
 
 ## 📄 Snippets List
+
+Below is attached a list of all supported snippets.
 
 ### Puppeteer
 
