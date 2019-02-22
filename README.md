@@ -9,6 +9,13 @@
   <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets target='_blank'">Installation</a> ·
+  <a href="#-how-to-use">Usage</a> ·
+  <a href="#-snippets-list">Snippets</a> ·
+  <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/CHANGELOG.md">CHANGELOG</a>
+</p>
+
 ## ℹ️️ Description
 
 This Visual Studio Code extension adds predefined useful code snippets for [Puppeteer](https://pptr.dev/).
