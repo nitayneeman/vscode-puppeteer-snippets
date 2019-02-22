@@ -9,17 +9,27 @@
   <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
-## Description
+## ℹ️️ Description
 
 This Visual Studio Code extension adds predefined useful code snippets for [Puppeteer](https://pptr.dev/).
 
 <p align="center">
-  <img src="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/images/preview.gif?raw=true" alt="Preview" style="border-radius: 3px">
+  <img src="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/images/preview.gif?raw=true" alt="Preview">
 </p>
 
 Check out the [API](https://pptr.dev/#?product=Puppeteer&show=outline) for getting more information about the available capabilities.
 
-## Snippets
+## 👨🏻‍🏫 How to Use
+
+There are two ways to apply the snippets:
+
+### 1. Direct Typing
+Start typing the prefix or just part of the snippet. Then, locate the snippets on the suggestions list and click on `TAB` or `ENTER`.
+
+### 2. Command Palette
+Open the Command Palette and type `Insert Snippet`. Then, simply choose the dedicated snippet.
+
+## 📄 Snippets List
 
 ### Puppeteer
 
