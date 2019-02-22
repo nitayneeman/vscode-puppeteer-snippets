@@ -1,11 +1,19 @@
 {
   "name": "vscode-puppeteer-snippets",
-  "displayName": "Puppeteer Snippets",
-  "description": "Code snippets for Puppeteer",
   "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.31.0"
+  "license": "MIT",
+  "author": "Nitay Neeman",
+  "description": "A Visual Studio Code extension which adds predefined useful code snippets for Puppeteer",
+  "homepage": "https://github.com/nitayneeman/vscode-puppeteer-snippets",
+  "keywords": [
+    "Puppeteer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitayneeman/vscode-puppeteer-snippets.git"
   },
+  "displayName": "Puppeteer Snippets",
+  "publisher": "nitayneeman",
   "icon": "images/puppeteer-logo.png",
   "galleryBanner": {
     "color": "#40b5a4",
@@ -33,5 +41,8 @@
         "path": "./snippets/snippets.json"
       }
     ]
+  },
+  "engines": {
+    "vscode": "^1.31.0"
   }
 }
