@@ -13,6 +13,10 @@
 
 This Visual Studio Code extension adds predefined useful code snippets for [Puppeteer](https://pptr.dev/).
 
+<p align="center">
+  <img src="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/images/preview.gif?raw=true" alt="Preview">
+</p>
+
 Check out the [API](https://pptr.dev/#?product=Puppeteer&show=outline) for getting more information about the available capabilities.
 
 ## Snippets
