@@ -1,15 +1,13 @@
-<h1 align="center">
-  <br>
-    <img src="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/images/puppeteer-logo.png?raw=true" alt="logo" width="200">
-  <br>
-  VS Code - Puppeteer Snippets
-  <br>
-  <br>
-</h1>
+![Puppeteer Logo](https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/images/puppeteer-logo.png?raw=true)
+
+<h2 align="center">VS Code - Puppeteer Snippets</h2>
+
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/version/msjsdiag.debugger-for-chrome.svg?label=Puppeteer%20Snippets" alt="Marketplace bagde"></a>
   <a href="https://vscode.visualstudio.com/1e32b5a6-a974-467b-9d5f-f47e49589c5e/_build/definition?definitionId=9"><img src="https://vscode.visualstudio.com/_apis/public/build/definitions/1e32b5a6-a974-467b-9d5f-f47e49589c5e/9/badge" alt="vsts"></a>
 </p>
+
+## Description
 
 This Visual Studio Code extension adds predefined useful code snippets for [Puppeteer](https://pptr.dev/).
 
@@ -37,7 +35,7 @@ This Visual Studio Code extension adds predefined useful code snippets for [Pupp
 | Snippet                         | Content                         |
 | ------------------------------- | ------------------------------- |
 | `p-page-$`                      | page.\$                         |
-| `p-page-$$`                     | page.\\$\$                      |
+| `p-page-$$`                     | page.\$\$                       |
 | `p-page-$eval`                  | page.\$eval                     |
 | `p-page-$$eval`                 | page.\$\$eval                   |
 | `p-page-browser`                | page.browser                    |
