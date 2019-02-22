@@ -325,6 +325,6 @@
       "",
       "await browser.close();"
     ],
-    "description": "Creates a basic skeleton example"
+    "description": "Creates a basic example of page"
   }
 }
