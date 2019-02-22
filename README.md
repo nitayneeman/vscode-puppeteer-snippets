@@ -93,8 +93,8 @@ Check out the [API](https://pptr.dev/#?product=Puppeteer&show=outline) for getti
 | `p-page-on-workercreated`       | page.on('workercreated',...)    |
 | `p-page-on-workerdestroyed`     | page.on('workerdestroyed',...)  |
 
-### General Templates
+### General Examples
 
 | Snippet            | Content                           |
 | ------------------ | --------------------------------- |
-| `p-template-basic` | Creates a basic skeleton template |
+| `p-examples-basic` | Creates a basic skeleton example |

@@ -313,8 +313,8 @@
     "body": ["page.on('workerdestroyed', worker => {", "\t${0:console.log(worker.url());}", "});"],
     "description": "Puppeteer - emitted when a dedicated `WebWorker` is terminated"
   },
-  "templates - basic": {
-    "prefix": "p-template-basic",
+  "Examples - basic": {
+    "prefix": "p-examples-basic",
     "body": [
       "const puppeteer = require('puppeteer');",
       "",
@@ -325,6 +325,6 @@
       "",
       "await browser.close();"
     ],
-    "description": "Puppeteer - creates a basic skeleton template"
+    "description": "Puppeteer - creates a basic skeleton example"
   }
 }
