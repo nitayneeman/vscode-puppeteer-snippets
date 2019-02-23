@@ -46,7 +46,8 @@
     "vscode": "^1.31.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "jest": "^24.1.0"
