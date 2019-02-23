@@ -1,5 +1,5 @@
 {
-  "name": "vscode-puppeteer-snippets",
+  "name": "puppeteer-snippets",
   "version": "0.0.1",
   "license": "MIT",
   "author": "Nitay Neeman",
@@ -12,6 +12,7 @@
     "type": "git",
     "url": "https://github.com/nitayneeman/vscode-puppeteer-snippets.git"
   },
+  "bugs": "https://github.com/nitayneeman/vscode-puppeteer-snippets/issues",
   "displayName": "Puppeteer Snippets",
   "publisher": "nitayneeman",
   "icon": "images/puppeteer-logo.png",
