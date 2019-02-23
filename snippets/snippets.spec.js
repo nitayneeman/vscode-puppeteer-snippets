@@ -12,21 +12,22 @@ describe('Snippets', () => {
       const { prefix } = snippets[key];
 
       expect(prefix).toBeDefined();
-      expect(prefix).not.toEqual('');
+      expect(prefix.length).toBeGreaterThan(0);
+      expect(prefix.startsWith('p-')).toBe(true);
     });
 
     it('should have a body', () => {
       const { body } = snippets[key];
 
       expect(body).toBeDefined();
-      expect(body).not.toEqual('');
+      expect(body.length).toBeGreaterThan(0);
     });
 
     it('should have a description', () => {
       const { description } = snippets[key];
 
       expect(description).toBeDefined();
-      expect(description).not.toEqual('');
+      expect(description.length).toBeGreaterThan(0);
     });
   });
 });
