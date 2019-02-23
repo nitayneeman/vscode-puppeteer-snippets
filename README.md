@@ -5,12 +5,13 @@
 <h1 align="center">VS Code - Puppeteer Snippets</h1>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/version/msjsdiag.debugger-for-chrome.svg?label=Puppeteer%20Snippets" alt="Marketplace bagde"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/version/msjsdiag.debugger-for-chrome.svg?label=Puppeteer%20Snippets" alt="Marketplace"></a>
+  <a href="https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets"><img src="https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets.svg?token=vHfpxFNvotCsScqrpvMs&branch=master alt="Build"></a>
   <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets target='_blank'">Installation</a> ·
+  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets">Installation</a> ·
   <a href="#-how-to-use">Usage</a> ·
   <a href="#-snippets-list">Snippets</a> ·
   <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/CHANGELOG.md">CHANGELOG</a>
