@@ -5,7 +5,7 @@
 <h1 align="center">VS Code - Puppeteer Snippets</h1>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/version/msjsdiag.debugger-for-chrome.svg?label=Puppeteer%20Snippets" alt="Marketplace"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/version/nitayneeman.puppeteer-snippets.svg?label=Puppeteer%20Snippets" alt="Marketplace"></a>
   <a href="https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets"><img src="https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets.svg?token=vHfpxFNvotCsScqrpvMs&branch=master" alt="Build"></a>
   <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
@@ -128,3 +128,6 @@ Below is attached a list of all supported snippets.
 | Snippet            | Content                          |
 | ------------------ | --------------------------------- |
 | `p-examples-basic` | Creates a basic example of a page |
+
+## Contributing
+Contributions are welcome
