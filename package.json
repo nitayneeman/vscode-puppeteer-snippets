@@ -42,6 +42,13 @@
       }
     ]
   },
+  "badges": [
+    {
+      "description": "Build",
+      "url": "https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets.svg?token=vHfpxFNvotCsScqrpvMs&branch=master",
+      "href": "https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets"
+    }
+  ],
   "engines": {
     "vscode": "^1.31.0"
   },
