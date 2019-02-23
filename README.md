@@ -129,5 +129,5 @@ Below is attached a list of all supported snippets.
 | ------------------ | --------------------------------- |
 | `p-examples-basic` | Creates a basic example of a page |
 
-## Contributing
-Contributions are welcome
+## 💁🏻 Contributing
+This is an open source project. Any contribution would be greatly appreciated!
