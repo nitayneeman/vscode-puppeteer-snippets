@@ -327,7 +327,7 @@
       "\tawait browser.close();",
       "})();"
     ],
-    "description": "Creates a basic example of a page"
+    "description": "Creates a basic usage example of a page"
   },
   "Examples - navigate to URL": {
     "prefix": "p-examples-navigateToUrl",
@@ -343,6 +343,6 @@
       "\tawait browser.close();",
       "})();"
     ],
-    "description": "Creates a basic example of a page"
+    "description": "Creates an example of page navigation by URL"
   }
 }
