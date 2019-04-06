@@ -36,9 +36,11 @@ At first, install the [extension](https://marketplace.visualstudio.com/items?ite
 Basically, there are two ways to apply the snippets:
 
 ### 1. Direct Typing
+
 Start typing the prefix or just part of the snippet. Then, locate the snippets on the suggestions list and click on `TAB` or `ENTER`.
 
 ### 2. Command Palette
+
 Open the Command Palette and type `Insert Snippet`. Then, simply choose the dedicated snippet.
 
 <br>
@@ -125,11 +127,13 @@ Below is attached a list of all supported snippets.
 
 ### General Examples
 
-| Snippet            | Content                          |
-| ------------------ | --------------------------------- |
-| `p-examples-basic` | Creates a basic example of a page |
+| Snippet                    | Content                                      |
+| -------------------------- | -------------------------------------------- |
+| `p-examples-basic`         | Creates a basic usage example of a page      |
+| `p-examples-navigateToUrl` | Creates an example of page navigation by URL |
 
 <br>
 
 ## 💁🏻 Contributing
+
 This is an open source project. Any contribution would be greatly appreciated!
