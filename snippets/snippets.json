@@ -328,5 +328,21 @@
       "})();"
     ],
     "description": "Creates a basic example of a page"
+  },
+  "Examples - navigate to URL": {
+    "prefix": "p-examples-navigateToUrl",
+    "body": [
+      "const puppeteer = require('puppeteer');",
+      "",
+      "(async () => {",
+      "\tconst browser = await puppeteer.launch();",
+      "\tconst page = await browser.newPage();",
+      "",
+      "\tawait page.goto('$0');",
+      "",
+      "\tawait browser.close();",
+      "})();"
+    ],
+    "description": "Creates a basic example of a page"
   }
 }
