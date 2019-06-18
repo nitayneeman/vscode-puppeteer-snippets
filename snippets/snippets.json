@@ -329,7 +329,7 @@
     ],
     "description": "Creates a basic usage example of a page"
   },
-  "Examples - navigate to URL": {
+  "Examples - navigating by URL": {
     "prefix": "p-examples-navigateToUrl",
     "body": [
       "const puppeteer = require('puppeteer');",
