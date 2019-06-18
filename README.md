@@ -5,9 +5,10 @@
 <h1 align="center">VS Code - Puppeteer Snippets</h1>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/version/nitayneeman.puppeteer-snippets.svg?label=Puppeteer%20Snippets" alt="Marketplace"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/version/nitayneeman.puppeteer-snippets.svg?label=Puppeteer%20Snippets&&color=40b5a4" alt="Marketplace"></a>
   <a href="https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets"><img src="https://travis-ci.com/nitayneeman/vscode-puppeteer-snippets.svg?token=vHfpxFNvotCsScqrpvMs&branch=master" alt="Build"></a>
-  <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets"><img src="https://vsmarketplacebadge.apphb.com/downloads/nitayneeman.puppeteer-snippets.svg?color=blue" alt="Downloads"></a>
+  <a href="https://github.com/nitayneeman/vscode-puppeteer-snippets/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-lightgray.svg" alt="License"></a>
 </p>
 
 <p align="center">
@@ -71,7 +72,7 @@ Below is attached a list of all supported snippets.
 | Snippet                         | Content                         |
 | ------------------------------- | ------------------------------- |
 | `p-page-$`                      | page.\$                         |
-| `p-page-$$`                     | page.\$\$                       |
+| `p-page-$$`                     | page.\\\\\\\\\\\\\\\\\$\$       |
 | `p-page-$eval`                  | page.\$eval                     |
 | `p-page-$$eval`                 | page.\$\$eval                   |
 | `p-page-browser`                | page.browser                    |
