@@ -55,7 +55,9 @@
   },
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepublish": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "jest": "^24.1.0"
