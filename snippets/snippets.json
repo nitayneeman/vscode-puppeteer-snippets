@@ -24,6 +24,11 @@
     "body": "${1:await }browser.close();",
     "description": "Closes Chromium and all of its pages"
   },
+  "browser.createIncognitoBrowserContext": {
+    "prefix": "p-browser-createIncognitoBrowserContext",
+    "body": "${1:const context = await }browser.createIncognitoBrowserContext();",
+    "description": "Creates a new browser context"
+  },
   "browser.disconnect": {
     "prefix": "p-browser-disconnect",
     "body": "browser.disconnect();",
