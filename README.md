@@ -60,19 +60,22 @@ Below is attached a list of all supported snippets.
 
 ### Browser
 
-| Snippet                     | Content                        |
-| --------------------------- | ------------------------------ |
-| `p-browser-close`           | browser.close                  |
-| `p-browser-disconnect`      | browser.disconnect             |
-| `p-browser-newPage`         | browser.newPage                |
-| `p-browser-on-disconnected` | browser.on('disconnected',...) |
+| Snippet                                   | Content                               |
+| ----------------------------------------- | ------------------------------------- |
+| `p-browser-browserContexts`               | browser.browserContexts               |
+| `p-browser-close`                         | browser.close                         |
+| `p-browser-createIncognitoBrowserContext` | browser.createIncognitoBrowserContext |
+| `p-browser-disconnect`                    | browser.disconnect                    |
+| `p-browser-newPage`                       | browser.newPage                       |
+| `p-browser-waitForTarget`                 | browser.waitForTarget                 |
+| `p-browser-on-disconnected`               | browser.on('disconnected',...)        |
 
 ### Page
 
 | Snippet                         | Content                         |
 | ------------------------------- | ------------------------------- |
 | `p-page-$`                      | page.\$                         |
-| `p-page-$$`                     | page.\\\\\\\\\\\\\\\\\$\$       |
+| `p-page-$$`                     | page.\\$\$                      |
 | `p-page-$eval`                  | page.\$eval                     |
 | `p-page-$$eval`                 | page.\$\$eval                   |
 | `p-page-browser`                | page.browser                    |
