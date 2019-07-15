@@ -34,6 +34,11 @@
     "body": "browser.disconnect();",
     "description": "Disconnects Puppeteer from the browser, but leaves the Chromium process running"
   },
+  "browser.waitForTarget": {
+    "prefix": "p-browser-waitForTarget",
+    "body": "${1:await }browser.waitForTarget($0);",
+    "description": "Waits until a predicate within any browser context returns a truthy value"
+  },
   "browser.newPage": {
     "prefix": "p-browser-newPage",
     "body": "${1:const page = await }browser.newPage();",
