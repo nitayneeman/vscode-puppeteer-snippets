@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `p-browser-browserContexts`
   - `p-browser-createIncognitoBrowserContext`
   - `p-browser-waitForTarget`
+- Add new page snippet: `p-page-metrics`
 
 ## [1.1.1] - 2019-06-18
 
