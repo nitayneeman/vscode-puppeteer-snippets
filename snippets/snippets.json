@@ -14,6 +14,11 @@
     "body": "${1:const browser = }${2:await }puppeteer.launch();",
     "description": "Creates a Chromium instance and attaches Puppeteer to it"
   },
+  "browser.browserContexts": {
+    "prefix": "p-browser-browserContexts",
+    "body": "browser.browserContexts();",
+    "description": "Returns an array of all browser contexts"
+  },
   "browser.close": {
     "prefix": "p-browser-close",
     "body": "${1:await }browser.close();",
