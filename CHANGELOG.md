@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add new import snippets:
+  - `p-import-core`
+  - `p-import-firefox`
+  - `p-import-devices`
 - Add new browser snippets:
   - `p-browser-browserContexts`
   - `p-browser-createIncognitoBrowserContext`

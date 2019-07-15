@@ -52,11 +52,14 @@ Below is attached a list of all supported snippets.
 
 ### Puppeteer
 
-| Snippet     | Content              |
-| ----------- | -------------------- |
-| `p-import`  | require('puppeteer') |
-| `p-connect` | puppeteer.connect    |
-| `p-launch`  | puppeteer.launch     |
+| Snippet            | Content                                |
+| ------------------ | -------------------------------------- |
+| `p-import`         | require('puppeteer')                   |
+| `p-import-core`    | require('puppeteer-core')              |
+| `p-import-firefox` | require('puppeteer-firefox')           |
+| `p-import-devices` | require('puppeteer/DeviceDescriptors') |
+| `p-connect`        | puppeteer.connect                      |
+| `p-launch`         | puppeteer.launch                       |
 
 ### Browser
 

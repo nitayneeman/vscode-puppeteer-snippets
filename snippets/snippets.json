@@ -1,8 +1,23 @@
 {
-  "puppeteer": {
+  "Puppeteer": {
     "prefix": "p-import",
     "body": "const ${1:puppeteer} = require('puppeteer');",
-    "description": "Imports Puppeteer"
+    "description": "Imports Puppeteer's full module"
+  },
+  "Puppeteer - core": {
+    "prefix": "p-import-core",
+    "body": "const ${1:puppeteer} = require('puppeteer-core');",
+    "description": "Imports Puppeteer's core module"
+  },
+  "Puppeteer - firefox": {
+    "prefix": "p-import-firefox",
+    "body": "const ${1:puppeteer} = require('puppeteer-firefox');",
+    "description": "Imports Puppeteer's Firefox module"
+  },
+  "puppeteer - devices": {
+    "prefix": "p-import-devices",
+    "body": "const ${1:devices} = require('puppeteer/DeviceDescriptors');",
+    "description": "Imports the device descriptors module"
   },
   "puppeteer.connect": {
     "prefix": "p-connect",
