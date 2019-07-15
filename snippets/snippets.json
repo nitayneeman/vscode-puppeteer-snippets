@@ -6,12 +6,12 @@
   },
   "puppeteer.connect": {
     "prefix": "p-connect",
-    "body": ["${1:await }puppeteer.connect({", "\tbrowserURL: '$0'", "});"],
+    "body": ["await puppeteer.connect({", "\tbrowserURL: '$0'", "});"],
     "description": "Attaches Puppeteer to an existing Chromium instance"
   },
   "puppeteer.launch": {
     "prefix": "p-launch",
-    "body": "${1:const browser = }${2:await }puppeteer.launch();",
+    "body": "const ${1:browser} = await puppeteer.launch($0);",
     "description": "Creates a Chromium instance and attaches Puppeteer to it"
   },
   "browser.browserContexts": {
@@ -21,12 +21,12 @@
   },
   "browser.close": {
     "prefix": "p-browser-close",
-    "body": "${1:await }browser.close();",
+    "body": "await browser.close();",
     "description": "Closes Chromium and all of its pages"
   },
   "browser.createIncognitoBrowserContext": {
     "prefix": "p-browser-createIncognitoBrowserContext",
-    "body": "${1:const context = await }browser.createIncognitoBrowserContext();",
+    "body": "const ${1:context} = await browser.createIncognitoBrowserContext();",
     "description": "Creates a new browser context"
   },
   "browser.disconnect": {
@@ -36,12 +36,12 @@
   },
   "browser.newPage": {
     "prefix": "p-browser-newPage",
-    "body": "${1:const page = await }browser.newPage();",
+    "body": "const ${1:page} = await browser.newPage();",
     "description": "Resolves a new page with the default browser context"
   },
   "browser.waitForTarget": {
     "prefix": "p-browser-waitForTarget",
-    "body": "${1:await }browser.waitForTarget($0);",
+    "body": "await browser.waitForTarget($0);",
     "description": "Waits until a predicate within any browser context returns a truthy value"
   },
   "browser.on('disconnected')": {
@@ -51,22 +51,22 @@
   },
   "page.$": {
     "prefix": "p-page-$",
-    "body": "${1:await }page.$('$0');",
+    "body": "await page.$('$0');",
     "description": "Runs `document.querySelector` within the page"
   },
   "page.$$": {
     "prefix": "p-page-$$",
-    "body": "${1:await }page.$$('$0');",
+    "body": "await page.$$('$0');",
     "description": "Runs `document.querySelectorAll` within the page"
   },
   "page.$eval": {
     "prefix": "p-page-$eval",
-    "body": ["${1:await }page.$eval('$2', element => {", "\t${3:console.log(element);}", "});"],
+    "body": ["await page.$eval('$2', element => {", "\t${3:console.log(element);}", "});"],
     "description": "Runs `document.querySelector` within the page and passes the result as the first argument to a function"
   },
   "page.$$eval": {
     "prefix": "p-page-$$eval",
-    "body": ["${1:await }page.$$eval('$2', elements => {", "\t${3:console.log(elements);}", "});"],
+    "body": ["await page.$$eval('$2', elements => {", "\t${3:console.log(elements);}", "});"],
     "description": "Runs `document.querySelectorAll` within the page and passes the results as the first argument to a function"
   },
   "page.browser": {
@@ -76,167 +76,167 @@
   },
   "page.click": {
     "prefix": "p-page-click",
-    "body": "${1:await }page.click('$0');",
+    "body": "await page.click('$0');",
     "description": "Clicks in the center of an element within the page"
   },
   "page.close": {
     "prefix": "p-page-close",
-    "body": "${1:await }page.close();",
+    "body": "await page.close();",
     "description": "Closes the page"
   },
   "page.content": {
     "prefix": "p-page-content",
-    "body": "${1:await }page.content();",
+    "body": "await page.content();",
     "description": "Returns the full HTML contents of the page"
   },
   "page.emulate": {
     "prefix": "p-page-emulate",
-    "body": "${1:await }page.emulate($0);",
+    "body": "await page.emulate($0);",
     "description": "Emulates a given device metrics and user agent within the page"
   },
   "page.emulateMedia": {
     "prefix": "p-page-emulateMedia",
-    "body": "${1:await }page.emulateMedia(${2|'screen','print',null|});",
+    "body": "await page.emulateMedia(${2|'screen','print',null|});",
     "description": "Changes the CSS media type of the page"
   },
   "page.evaluate": {
     "prefix": "p-page-evaluate",
-    "body": ["${1:await }page.evaluate(() => {", "\t$0", "});"],
+    "body": ["await page.evaluate(() => {", "\t$0", "});"],
     "description": "Evaluates a function in the page context"
   },
   "page.focus": {
     "prefix": "p-page-focus",
-    "body": "${1:await }page.focus('$0');",
+    "body": "await page.focus('$0');",
     "description": "Focuses an element within the page"
   },
   "page.goBack": {
     "prefix": "p-page-goBack",
-    "body": "${1:await }page.goBack();",
+    "body": "await page.goBack();",
     "description": "Navigates to the previous page in the history"
   },
   "page.goForward": {
     "prefix": "p-page-goForward",
-    "body": "${1:await }page.goForward();",
+    "body": "await page.goForward();",
     "description": "Navigates to the next page in the history"
   },
   "page.goto": {
     "prefix": "p-page-goto",
-    "body": "${1:await }page.goto('$0');",
+    "body": "await page.goto('$0');",
     "description": "Navigates the page to a URL"
   },
   "page.hover": {
     "prefix": "p-page-hover",
-    "body": "${1:await }page.hover('$0');",
+    "body": "await page.hover('$0');",
     "description": "Hovers over the center of an element within the page"
   },
   "page.keyboard.down": {
     "prefix": "p-page-keyboard-down",
-    "body": "${1:await }page.keyboard.down('$0');",
+    "body": "await page.keyboard.down('$0');",
     "description": "Dispatches a `keydown` event within the page"
   },
   "page.keyboard.press": {
     "prefix": "p-page-keyboard-press",
-    "body": "${1:await }page.keyboard.press('$0');",
+    "body": "await page.keyboard.press('$0');",
     "description": "Presses on a specific key within the page"
   },
   "page.keyboard.sendCharacter": {
     "prefix": "p-page-keyboard-sendCharacter",
-    "body": "${1:await }page.keyboard.sendCharacter('$0');",
+    "body": "await page.keyboard.sendCharacter('$0');",
     "description": "Dispatches a `keypress` and `input` event within the page"
   },
   "page.keyboard.type": {
     "prefix": "p-page-keyboard-type",
-    "body": "${1:await }page.keyboard.type('$0');",
+    "body": "await page.keyboard.type('$0');",
     "description": "Types a text into a focused element within the page"
   },
   "page.keyboard.up": {
     "prefix": "p-page-keyboard-up",
-    "body": "${1:await }page.keyboard.up('$0');",
+    "body": "await page.keyboard.up('$0');",
     "description": "Dispatches a `keyup` event within the page"
   },
   "page.metrics": {
     "prefix": "p-page-metrics",
-    "body": "${1:const metrics = await }page.metrics();",
+    "body": "const ${1:metrics} = await page.metrics();",
     "description": "Returns runtime metrics of the page"
   },
   "page.mouse.click": {
     "prefix": "p-page-mouse-click",
-    "body": "${1:await }page.mouse.click(${2:0}, ${3:100});",
+    "body": "await page.mouse.click(${2:0}, ${3:100});",
     "description": "Clicks on area within the page by coordinates"
   },
   "page.mouse.down": {
     "prefix": "p-page-mouse-down",
-    "body": "${1:await }page.mouse.down();",
+    "body": "await page.mouse.down();",
     "description": "Dispatches a `mousedown` event within the page"
   },
   "page.mouse.move": {
     "prefix": "p-page-mouse-move",
-    "body": "${1:await }page.mouse.move();",
+    "body": "await page.mouse.move();",
     "description": "Dispatches a `mousemove` event within the page"
   },
   "page.mouse.up": {
     "prefix": "p-page-mouse-up",
-    "body": "${1:await }page.mouse.up();",
+    "body": "await page.mouse.up();",
     "description": "Dispatches a `mouseup` event within the page"
   },
   "page.pdf": {
     "prefix": "p-page-pdf",
-    "body": "${1:await }page.pdf({ path: '${2:page.pdf}', format: '${3|A4,Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A5,A6|}' });",
+    "body": "await page.pdf({ path: '${2:page.pdf}', format: '${3|A4,Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A5,A6|}' });",
     "description": "Generates a PDF from the page"
   },
   "page.reload": {
     "prefix": "p-page-reload",
-    "body": "${1:await }page.reload();",
+    "body": "await page.reload();",
     "description": "Reloads the page"
   },
   "page.screenshot": {
     "prefix": "p-page-screenshot",
-    "body": "${1:await }page.screenshot({ path: '${2:page.png}', fullPage: '${3|true,false|}' });",
+    "body": "await page.screenshot({ path: '${2:page.png}', fullPage: '${3|true,false|}' });",
     "description": "Generates a screenshot of the page"
   },
   "page.title": {
     "prefix": "p-page-title",
-    "body": "${1:await }page.title();",
+    "body": "await page.title();",
     "description": "Returns the page's title"
   },
   "page.url": {
     "prefix": "p-page-url",
-    "body": "${1:await }page.url();",
+    "body": "await page.url();",
     "description": "Returns the page's URL"
   },
   "page.waitFor": {
     "prefix": "p-page-waitFor",
-    "body": "${1:await }page.waitFor($0);",
+    "body": "await page.waitFor($0);",
     "description": "Waits until an element/predicate/timeout within the page is resolved"
   },
   "page.waitForFunction": {
     "prefix": "p-page-waitForFunction",
-    "body": "${1:await }page.waitForFunction($0);",
+    "body": "await page.waitForFunction($0);",
     "description": "Waits until a predicate within the page returns a truthy value"
   },
   "page.waitForNavigation": {
     "prefix": "p-page-waitForNavigation",
-    "body": "${1:await }page.waitForNavigation();",
+    "body": "await page.waitForNavigation();",
     "description": "Waits until the page navigates to a new URL or reloads"
   },
   "page.waitForRequest": {
     "prefix": "p-page-waitForRequest",
-    "body": "${1:await }page.waitForRequest($0);",
+    "body": "await page.waitForRequest($0);",
     "description": "Waits until a request by URL/predicate is resolved"
   },
   "page.waitForResponse": {
     "prefix": "p-page-waitForResponse",
-    "body": "${1:await }page.waitForResponse($0);",
+    "body": "await page.waitForResponse($0);",
     "description": "Waits until a response by URL/predicate is resolved"
   },
   "page.waitForSelector": {
     "prefix": "p-page-waitForSelector",
-    "body": "${1:await }page.waitForSelector('$0');",
+    "body": "await page.waitForSelector('$0');",
     "description": "Waits until an element (by selector) is appeared in the page"
   },
   "page.waitForXPath": {
     "prefix": "p-page-waitForXPath",
-    "body": "${1:await }page.waitForXPath('$0');",
+    "body": "await page.waitForXPath('$0');",
     "description": "Waits until an element (by XPath) is appeared in the page"
   },
   "page.on('close')": {
