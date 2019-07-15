@@ -94,6 +94,7 @@ Below is attached a list of all supported snippets.
 | `p-page-keyboard-sendCharacter` | page.keyboard.sendCharacter     |
 | `p-page-keyboard-type`          | page.keyboard.type              |
 | `p-page-keyboard-up`            | page.keyboard.up                |
+| `p-page-metrics`                | page.metrics                    |
 | `p-page-mouse-click`            | page.mouse.click                |
 | `p-page-mouse-down`             | page.mouse.down                 |
 | `p-page-mouse-move`             | page.mouse.move                 |

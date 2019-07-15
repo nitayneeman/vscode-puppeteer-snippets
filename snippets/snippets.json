@@ -154,6 +154,11 @@
     "body": "${1:await }page.keyboard.up('$0');",
     "description": "Dispatches a `keyup` event within the page"
   },
+  "page.metrics": {
+    "prefix": "p-page-metrics",
+    "body": "${1:const metrics = await }page.metrics();",
+    "description": "Returns runtime metrics of the page"
+  },
   "page.mouse.click": {
     "prefix": "p-page-mouse-click",
     "body": "${1:await }page.mouse.click(${2:0}, ${3:100});",
