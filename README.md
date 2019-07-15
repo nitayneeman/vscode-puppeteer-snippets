@@ -132,9 +132,10 @@ Below is attached a list of all supported snippets.
 
 ### General Examples
 
-| Snippet            | Content                                 |
-| ------------------ | --------------------------------------- |
-| `p-examples-basic` | Creates a basic usage example of a page |
+| Snippet            | Content                                                                 |
+| ------------------ | ----------------------------------------------------------------------- |
+| `p-examples-basic` | Creates a basic usage example of a page                                 |
+| `p-examples-sleep` | Creates an example that sleeps the browser with a specified time period |
 
 <br>
 

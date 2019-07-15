@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `p-browser-createIncognitoBrowserContext`
   - `p-browser-waitForTarget`
 - Add new page snippet: `p-page-metrics`
+- Add new example snippet: `p-examples-sleep`
 
 ### Changed
 

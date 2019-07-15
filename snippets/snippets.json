@@ -348,5 +348,13 @@
       "})();"
     ],
     "description": "Creates a basic usage example of a page"
+  },
+  "Examples - sleep": {
+    "prefix": "p-examples-sleep",
+    "body": [
+      "const sleep = duration => new Promise(resolve => setTimeout(resolve, duration));",
+      "await sleep($0);"
+    ],
+    "description": "Creates an example that sleeps the browser with a specified time period"
   }
 }
