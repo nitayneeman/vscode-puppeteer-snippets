@@ -75,7 +75,7 @@ Below is attached a list of all supported snippets.
 | Snippet                         | Content                         |
 | ------------------------------- | ------------------------------- |
 | `p-page-$`                      | page.\$                         |
-| `p-page-$$`                     | page.\\\\$\$                    |
+| `p-page-$$`                     | page.\\$\$                      |
 | `p-page-$eval`                  | page.\$eval                     |
 | `p-page-$$eval`                 | page.\$\$eval                   |
 | `p-page-browser`                | page.browser                    |
@@ -132,10 +132,9 @@ Below is attached a list of all supported snippets.
 
 ### General Examples
 
-| Snippet                    | Content                                      |
-| -------------------------- | -------------------------------------------- |
-| `p-examples-basic`         | Creates a basic usage example of a page      |
-| `p-examples-navigateToUrl` | Creates an example of page navigation by URL |
+| Snippet            | Content                                 |
+| ------------------ | --------------------------------------- |
+| `p-examples-basic` | Creates a basic usage example of a page |
 
 <br>
 

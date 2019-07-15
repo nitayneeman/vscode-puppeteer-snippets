@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Change snippets to add `await` by default
 
+### Removed
+
+- Remove redundant snippet: `p-examples-navigateToUrl`
+
 ## [1.1.1] - 2019-06-18
 
 ### Fixed
