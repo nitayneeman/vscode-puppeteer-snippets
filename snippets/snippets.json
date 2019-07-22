@@ -371,5 +371,18 @@
       "await sleep($0);"
     ],
     "description": "Creates an example that sleeps the browser with a specified time period"
+  },
+  "Examples - drag and drop": {
+    "prefix": "p-examples-dragAndDrop",
+    "body": [
+      "// Drags the mouse from a point",
+      "await page.mouse.move($1);",
+      "await page.mouse.down();",
+      "",
+      "// Drops the mouse to another point",
+      "await page.mouse.move($2);",
+      "await page.mouse.up();"
+    ],
+    "description": "Creates an example that drags the mouse from a point and drops it to another point"
   }
 }
