@@ -9,7 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add new example snippet: `p-examples-dragAndDrop`
+- Add new example snippets:
+  - `p-examples-dragAndDrop`
+  - `p-examples-loadTimeMetrics`
 
 ## [1.2.0] - 2019-07-15
 

@@ -78,7 +78,7 @@ Below is attached a list of all supported snippets.
 | Snippet                         | Content                         |
 | ------------------------------- | ------------------------------- |
 | `p-page-$`                      | page.\$                         |
-| `p-page-$$`                     | page.\\$\$                      |
+| `p-page-$$`                     | page.\$\$                       |
 | `p-page-$eval`                  | page.\$eval                     |
 | `p-page-$$eval`                 | page.\$\$eval                   |
 | `p-page-browser`                | page.browser                    |
@@ -135,11 +135,12 @@ Below is attached a list of all supported snippets.
 
 ### General Examples
 
-| Snippet                  | Content                                                                            |
-| ------------------------ | ---------------------------------------------------------------------------------- |
-| `p-examples-basic`       | Creates a basic usage example of a page                                            |
-| `p-examples-sleep`       | Creates an example that sleeps the browser with a specified time period            |
-| `p-examples-dragAndDrop` | Creates an example that drags the mouse from a point and drops it to another point |
+| Snippet                      | Content                                                                            |
+| ---------------------------- | ---------------------------------------------------------------------------------- |
+| `p-examples-basic`           | Creates a basic usage example of a page                                            |
+| `p-examples-sleep`           | Creates an example that sleeps the browser with a specified time period            |
+| `p-examples-dragAndDrop`     | Creates an example that drags the mouse from a point and drops it to another point |
+| `p-examples-loadTimeMetrics` | Creates an example that evaluates `window.performance` within the page context     |
 
 <br>
 

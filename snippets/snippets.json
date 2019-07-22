@@ -384,5 +384,13 @@
       "await page.mouse.up();"
     ],
     "description": "Creates an example that drags the mouse from a point and drops it to another point"
+  },
+  "Examples - load time metrics": {
+    "prefix": "p-examples-loadTimeMetrics",
+    "body": [
+      "const ${1:metrics} = await page.evaluate(() => JSON.stringify(window.performance));",
+      "console.info(JSON.parse($1));"
+    ],
+    "description": "Creates an example that evaluates `window.performance` within the page context"
   }
 }
