@@ -114,6 +114,7 @@ Below is attached a list of all supported snippets.
 | `p-page-waitForResponse`        | page.waitForResponse            |
 | `p-page-waitForSelector`        | page.waitForSelector            |
 | `p-page-waitForXPath`           | page.waitForXPath               |
+| `p-page-waitForFileChooser`     | page.waitForFileChooser         |
 | `p-page-on-close`               | page.on('close',...)            |
 | `p-page-on-console`             | page.on('console',...)          |
 | `p-page-on-dialog`              | page.on('dialog',...)           |

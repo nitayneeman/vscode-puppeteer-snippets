@@ -254,6 +254,11 @@
     "body": "await page.waitForXPath('$0');",
     "description": "Waits until an element (by XPath) is appeared in the page"
   },
+  "page.waitForFileChooser": {
+    "prefix": "p-page-waitForFileChooser",
+    "body": "await page.waitForFileChooser();",
+    "description": "Waits until a file chooser is requested in the page"
+  },
   "page.on('close')": {
     "prefix": "p-page-on-close",
     "body": ["page.on('close', () => {", "\t${0:console.log('Closed');}", "});"],
