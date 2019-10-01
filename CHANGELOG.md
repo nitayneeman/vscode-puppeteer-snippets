@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add new page snippet: `waitForFileChooser`
+- Add new page snippet: `p-page-waitForFileChooser`
 
 ## [1.3.0] - 2019-07-22
 
