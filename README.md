@@ -86,7 +86,9 @@ Below is attached a list of all supported snippets.
 | `p-page-close`                  | page.close                      |
 | `p-page-content`                | page.content                    |
 | `p-page-emulate`                | page.emulate                    |
-| `p-page-emulateMedia`           | page.emulateMedia               |
+| `p-page-emulateMediaFeatures`   | page.emulateMediaFeatures       |
+| `p-page-emulateMediaType`       | page.emulateMediaType           |
+| `p-page-emulateTimezone`        | page.emulateTimezone            |
 | `p-page-focus`                  | page.focus                      |
 | `p-page-goBack`                 | page.goBack                     |
 | `p-page-goForward`              | page.goForward                  |
