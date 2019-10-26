@@ -109,10 +109,15 @@
     "body": "await page.emulate($0);",
     "description": "Emulates a given device metrics and user agent within the page"
   },
+  "page.emulateMediaFeatures": {
+    "prefix": "p-page-emulateMediaFeatures",
+    "body": "await page.emulateMediaFeatures([$0]);",
+    "description": "Changes the CSS media type of the page"
+  },
   "page.emulateMediaType": {
     "prefix": "p-page-emulateMediaType",
     "body": "await page.emulateMediaType(${2|'screen','print',null|});",
-    "description": "Changes the CSS media type of the page"
+    "description": "Emulates a given CSS media features within the page"
   },
   "page.emulateTimezone": {
     "prefix": "p-page-emulateTimezone",
