@@ -32,7 +32,7 @@ Check out the [API](https://pptr.dev/#?product=Puppeteer&show=outline) for getti
 
 ## 👨🏻‍🏫 How to Use
 
-At first, install the [extension](https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets).
+The first thing you need to do is installing the [extension](https://marketplace.visualstudio.com/items?itemName=nitayneeman.puppeteer-snippets).
 
 Basically, there are two ways to apply the snippets:
 
