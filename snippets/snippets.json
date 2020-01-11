@@ -16,7 +16,7 @@
   },
   "puppeteer - devices": {
     "prefix": "p-import-devices",
-    "body": "const ${1:devices} = require('puppeteer/DeviceDescriptors');",
+    "body": "const { devices } = require('puppeteer');",
     "description": "Imports the device descriptors module"
   },
   "puppeteer.connect": {
@@ -76,12 +76,20 @@
   },
   "page.$eval": {
     "prefix": "p-page-$eval",
-    "body": ["await page.$eval('$2', element => {", "\t${3:console.log(element);}", "});"],
+    "body": [
+      "await page.$eval('$2', element => {",
+      "\t${3:console.log(element);}",
+      "});"
+    ],
     "description": "Runs `document.querySelector` within the page and passes the result as the first argument to a function"
   },
   "page.$$eval": {
     "prefix": "p-page-$$eval",
-    "body": ["await page.$$eval('$2', elements => {", "\t${3:console.log(elements);}", "});"],
+    "body": [
+      "await page.$$eval('$2', elements => {",
+      "\t${3:console.log(elements);}",
+      "});"
+    ],
     "description": "Runs `document.querySelectorAll` within the page and passes the results as the first argument to a function"
   },
   "page.browser": {
@@ -271,17 +279,29 @@
   },
   "page.on('close')": {
     "prefix": "p-page-on-close",
-    "body": ["page.on('close', () => {", "\t${0:console.log('Closed');}", "});"],
+    "body": [
+      "page.on('close', () => {",
+      "\t${0:console.log('Closed');}",
+      "});"
+    ],
     "description": "Emitted when the page is closed"
   },
   "page.on('console')": {
     "prefix": "p-page-on-console",
-    "body": ["page.on('console', msg => {", "\t${0:console.log(msg.args());}", "});"],
+    "body": [
+      "page.on('console', msg => {",
+      "\t${0:console.log(msg.args());}",
+      "});"
+    ],
     "description": "Emitted when a script within the page calls one of console API methods"
   },
   "page.on('dialog')": {
     "prefix": "p-page-on-dialog",
-    "body": ["page.on('dialog', dialog => {", "\t${0:console.log(dialog.message());}", "});"],
+    "body": [
+      "page.on('dialog', dialog => {",
+      "\t${0:console.log(dialog.message());}",
+      "});"
+    ],
     "description": "Emitted when a dialog appears in the page"
   },
   "page.on('domcontentloaded')": {
@@ -295,22 +315,38 @@
   },
   "page.on('error')": {
     "prefix": "p-page-on-error",
-    "body": ["page.on('error', error => {", "\t${0:console.log(error);}", "});"],
+    "body": [
+      "page.on('error', error => {",
+      "\t${0:console.log(error);}",
+      "});"
+    ],
     "description": "Emitted when the page crashes"
   },
   "page.on('frameattached')": {
     "prefix": "p-page-on-frameattached",
-    "body": ["page.on('frameattached', frame => {", "\t${0:console.log(frame.content());}", "});"],
+    "body": [
+      "page.on('frameattached', frame => {",
+      "\t${0:console.log(frame.content());}",
+      "});"
+    ],
     "description": "Emitted when a frame within the page is attached"
   },
   "page.on('framedetached')": {
     "prefix": "p-page-on-framedetached",
-    "body": ["page.on('framedetached', frame => {", "\t${0:console.log(frame.content());}", "});"],
+    "body": [
+      "page.on('framedetached', frame => {",
+      "\t${0:console.log(frame.content());}",
+      "});"
+    ],
     "description": "Emitted when a frame within the page is detached"
   },
   "page.on('framenavigated')": {
     "prefix": "p-page-on-framenavigated",
-    "body": ["page.on('framenavigated', frame => {", "\t${0:console.log(frame.content());}", "});"],
+    "body": [
+      "page.on('framenavigated', frame => {",
+      "\t${0:console.log(frame.content());}",
+      "});"
+    ],
     "description": "Emitted when a frame within the page is navigated to a new url"
   },
   "page.on('load')": {
@@ -320,47 +356,83 @@
   },
   "page.on('metrics')": {
     "prefix": "p-page-on-metrics",
-    "body": ["page.on('metrics', result => {", "\t${0:console.log(result.metrics);}", "});"],
+    "body": [
+      "page.on('metrics', result => {",
+      "\t${0:console.log(result.metrics);}",
+      "});"
+    ],
     "description": "Emitted when a script within the page invokes `console.timeStamp`"
   },
   "page.on('pageerror')": {
     "prefix": "p-page-on-pageerror",
-    "body": ["page.on('pageerror', error => {", "\t${0:console.log(error);}", "});"],
+    "body": [
+      "page.on('pageerror', error => {",
+      "\t${0:console.log(error);}",
+      "});"
+    ],
     "description": "Emitted when an uncaught exception happens within the page"
   },
   "page.on('popup')": {
     "prefix": "p-page-on-popup",
-    "body": ["page.on('popup', page => {", "\t${0:console.log(page.content());}", "});"],
+    "body": [
+      "page.on('popup', page => {",
+      "\t${0:console.log(page.content());}",
+      "});"
+    ],
     "description": "Emitted when the page opens a new tab or window"
   },
   "page.on('request')": {
     "prefix": "p-page-on-request",
-    "body": ["page.on('request', request => {", "\t${0:console.log(request.url());}", "});"],
+    "body": [
+      "page.on('request', request => {",
+      "\t${0:console.log(request.url());}",
+      "});"
+    ],
     "description": "Emitted when the request is issued by the page"
   },
   "page.on('requestfailed')": {
     "prefix": "p-page-on-requestfailed",
-    "body": ["page.on('requestfailed', request => {", "\t${0:console.log(request.url());}", "});"],
+    "body": [
+      "page.on('requestfailed', request => {",
+      "\t${0:console.log(request.url());}",
+      "});"
+    ],
     "description": "Emitted when a request fails"
   },
   "page.on('requestfinished')": {
     "prefix": "p-page-on-requestfinished",
-    "body": ["page.on('requestfailed', request => {", "\t${0:console.log(request.url());}", "});"],
+    "body": [
+      "page.on('requestfailed', request => {",
+      "\t${0:console.log(request.url());}",
+      "});"
+    ],
     "description": "Emitted when a request finishes successfully"
   },
   "page.on('response')": {
     "prefix": "p-page-on-response",
-    "body": ["page.on('response', response => {", "\t${0:console.log(response.status());}", "});"],
+    "body": [
+      "page.on('response', response => {",
+      "\t${0:console.log(response.status());}",
+      "});"
+    ],
     "description": "Emitted when a response is received"
   },
   "page.on('workercreated')": {
     "prefix": "p-page-on-workercreated",
-    "body": ["page.on('workercreated', worker => {", "\t${0:console.log(worker.url());}", "});"],
+    "body": [
+      "page.on('workercreated', worker => {",
+      "\t${0:console.log(worker.url());}",
+      "});"
+    ],
     "description": "Emitted when a dedicated `WebWorker` is spawned by the page"
   },
   "page.on('workerdestroyed')": {
     "prefix": "p-page-on-workerdestroyed",
-    "body": ["page.on('workerdestroyed', worker => {", "\t${0:console.log(worker.url());}", "});"],
+    "body": [
+      "page.on('workerdestroyed', worker => {",
+      "\t${0:console.log(worker.url());}",
+      "});"
+    ],
     "description": "Emitted when a dedicated `WebWorker` is terminated"
   },
   "Examples - basic": {
