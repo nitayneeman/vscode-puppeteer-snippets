@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-snippets",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "license": "MIT",
   "author": "Nitay Neeman",
   "description": "📋 A Visual Studio Code extension which adds predefined useful code snippets for Puppeteer",
