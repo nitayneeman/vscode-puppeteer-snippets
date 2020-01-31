@@ -29,6 +29,11 @@
     "body": "const ${1:browser} = await puppeteer.launch($0);",
     "description": "Creates a Chromium instance and attaches Puppeteer to it"
   },
+  "puppeteer.product": {
+    "prefix": "p-product",
+    "body": "const ${1:product} = puppeteer.product;",
+    "description": "Returns the name of the browser (whether 'chrome' or 'firefox')"
+  },
   "browser.browserContexts": {
     "prefix": "p-browser-browserContexts",
     "body": "browser.browserContexts();",

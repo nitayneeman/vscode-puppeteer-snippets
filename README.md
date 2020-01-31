@@ -60,6 +60,7 @@ Below is attached a list of all supported snippets.
 | `p-import-devices` | require('puppeteer/DeviceDescriptors') |
 | `p-connect`        | puppeteer.connect                      |
 | `p-launch`         | puppeteer.launch                       |
+| `p-product`        | puppeteer.product                      |
 
 ### Browser
 
@@ -78,7 +79,7 @@ Below is attached a list of all supported snippets.
 | Snippet                         | Content                         |
 | ------------------------------- | ------------------------------- |
 | `p-page-$`                      | page.\$                         |
-| `p-page-$$`                     | page.\$\$                       |
+| `p-page-$$`                     | page.\\$\$                      |
 | `p-page-$eval`                  | page.\$eval                     |
 | `p-page-$$eval`                 | page.\$\$eval                   |
 | `p-page-browser`                | page.browser                    |
