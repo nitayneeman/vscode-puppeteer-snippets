@@ -28,6 +28,8 @@ This Visual Studio Code extension adds predefined useful code snippets for [Pupp
 
 Check out the [API](https://pptr.dev/#?product=Puppeteer&show=outline) for getting more information about the available capabilities.
 
+_**Note:** If you look for Playwright snippets - check out [this](https://marketplace.visualstudio.com/items?itemName=nitayneeman.playwright-snippets) extension._
+
 <br>
 
 ## 👨🏻‍🏫 How to Use
